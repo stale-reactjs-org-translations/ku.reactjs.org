@@ -1,8 +1,8 @@
 ---
-title: Learn Once, Write Anywhere
+title: یه‌كجار بینووسه‌ و له‌ هه‌موو شوێنێك به‌كاریبێنه‌
 order: 2
 ---
 
-We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+ئێمه‌ بیر له‌وه‌ ناكه‌ینه‌وه‌ كه‌ چ ستاكێك به‌كارده‌هێنیت بۆ ئاپه‌كه‌ت، بۆ ئه‌وه‌ی تۆ بتوانیت به‌رهه‌می نوێ بونیاد بنێیت به‌ بێ دووباره‌ نوسینه‌وه‌ی هیچ كۆدێك.
 
-React can also render on the server using Node and power mobile apps using [React Native](https://facebook.github.io/react-native/).
+ڕیاكت له‌سه‌ر سێرڤه‌ریش ده‌توانرێت به‌كار بهێنرێت به‌ به‌كارهێنانی (نۆد‌) و هه‌روه‌ها ده‌توانێت ئه‌پی مۆبایلیشی پێ به‌رهه‌م بهێنرێت به‌ به‌كارهێنانی‌ [ڕیاكت نه‌یتڤ](https://facebook.github.io/react-native/)
