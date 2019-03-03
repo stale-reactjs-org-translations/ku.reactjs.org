@@ -1,8 +1,8 @@
 ---
-title: Component-Based
+title: كۆمپۆنێنت
 order: 1
 ---
 
-Build encapsulated components that manage their own state, then compose them to make complex UIs.
+كۆمپۆنێنتی له‌ناویه‌ك تێكهه‌ڵكێشراو دروستبكه‌ كه‌ زانیاری خۆیان ڕێكئه‌خه‌ن، دواتر ڕێكیان بخه‌ بۆ دروستكردنی یوزه‌ر ئینته‌رفه‌یسێكی تێكه‌ڵ.
 
-Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+له‌به‌رئه‌وه‌ی لۆجیكی كۆمپۆنێنته‌كان هه‌ر به‌ جاڤاسكریپت ده‌نووسرێن، ده‌توانیت به‌ ئاسانی داتای زۆر بخه‌یته‌ ناو ئاپه‌كه‌ت و داتاكه‌ له‌ ده‌ره‌وه‌ی (دۆم) بهێڵه‌ته‌وه‌.

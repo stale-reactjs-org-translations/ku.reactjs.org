@@ -111,7 +111,7 @@ class Home extends Component {
                         fontSize: 60,
                       },
                     }}>
-                    React
+                    ڕیاكت
                   </h1>
                   <p
                     css={{
@@ -133,7 +133,7 @@ class Home extends Component {
                         fontSize: 30,
                       },
                     }}>
-                    A JavaScript library for building user interfaces
+                    لایبره‌ریه‌كی جاڤاسكریپته‌ بۆ بونیادنانی یوزه‌ر ئینته‌رفه‌یس
                   </p>
                   <Flex
                     valign="center"
@@ -148,12 +148,12 @@ class Home extends Component {
                       <ButtonLink
                         to="/docs/getting-started.html"
                         type="primary">
-                        Get Started
+                        ده‌ستپێبكه‌
                       </ButtonLink>
                     </CtaItem>
                     <CtaItem>
                       <ButtonLink to="/tutorial/tutorial.html" type="secondary">
-                        Take the Tutorial
+                        وانه‌كان وه‌رگره‌
                       </ButtonLink>
                     </CtaItem>
                   </Flex>

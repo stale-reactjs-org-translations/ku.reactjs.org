@@ -1,8 +1,8 @@
 ---
-title: Declarative
+title: پێناسه‌كراو
 order: 0
 ---
 
-React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+ڕیاكت بونیادنانی یوزه‌ر ئینته‌رفه‌یس ئاسان ده‌كات. له‌ كاتی دروستكردنی هه‌ر به‌شێكی نوێ بۆ ئه‌پلیكه‌یشنه‌كه‌ت، ڕیاكت به‌ سه‌ركه‌وتوویی ته‌نها ئه‌و به‌شه‌ی ئه‌پلیكه‌یشنه‌كه‌ ئه‌پده‌یت ده‌كاته‌وه‌ كه‌ داتاكه‌ی گۆڕاوه‌.
 
-Declarative views make your code more predictable and easier to debug.
+ڤیوی پێناسه‌كراو كۆده‌كه‌ت ڕوونتر و ئاسانتر ده‌كات بۆ چاره‌سه‌ركردن.
