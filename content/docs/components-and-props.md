@@ -1,6 +1,6 @@
 ---
 id: components-and-props
-title: کۆمپۆنێنت و پرۆپەرتی
+title: کۆمپۆنێنت و پرۆپس
 permalink: docs/components-and-props.html
 redirect_from:
   - "docs/reusable-components.html"
