@@ -55,7 +55,7 @@ Yarn
 # كۆپییه‌ك له‌ رێپۆكه‌مان بۆ ده‌ستپێكردنی سێرڤه‌ری خۆكار كه‌ له‌ وه‌رگیراوه‌
 yarn dev
 ```
-[![asciicast](https://asciinema.org/a/231799.svg)](https://asciinema.org/a/231799)
+[![asciicast](https://asciinema.org/a/231801.svg)](https://asciinema.org/a/231801)
 
 ئه‌م به‌سته‌ره‌ له‌ گه‌ڕۆكه‌كاتدا بكه‌ره‌وه‌:
 http://localhost:8000
