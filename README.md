@@ -6,7 +6,7 @@
 
 ئه‌م رێپۆیه‌ به‌ ئامانجی وه‌رگێڕانی دۆكیومنته‌یشنی ریاكت  (react)بۆ زمانی كوردی له‌ reactjs/reactjs.org فۆرك كراوه‌.
 
-به‌ره‌وپێشچوونه‌كانمان له‌ رێگه‌ی ئه‌م ماڵپه‌ڕه‌وه‌ ببینه‌: isreacttranslatedyet.com
+به‌ره‌وپێشچوونه‌كانمان له‌ رێگه‌ی ئه‌م ماڵپه‌ڕه‌وه‌ ببینه‌: https://isreacttranslatedyet.com/
 
 
 ## با ده‌ستپێبكه‌ین!
@@ -16,7 +16,7 @@
 
 1. Git 
 2. Node: وه‌شانی ٨ له‌ وه‌شانی ٨.٤.٠ به‌ره‌و سه‌ره‌وه‌
-3. Yarn: (https://yarnpkg.com/lang/en/docs/install/)
+3. Yarn: https://yarnpkg.com/lang/en/docs/install
 
 
 ### دامه‌زراندن
@@ -65,7 +65,7 @@ http://localhost:8000
 2. cd ku.reactjs.org
 3. git checkout master
 # به‌ دڵی خۆت، ناوی ئه‌و لقه‌ی دروستی ده‌كه‌یت له‌ خواره‌وه‌ دابنێ
-4. git checkout -b [the-name-of-my-branch]
+4. ]git checkout -b [the-name-of-my-branch
 ```
 
 ### گۆڕانكاریی بكه‌
@@ -89,7 +89,7 @@ http://localhost:8000
 مه‌سجه‌كه‌ت له‌ خواره‌وه‌دا بنووسه #‌
 1. git add -A && git commit -m "[the-message]"
 # ناوی فۆركه‌كه‌ت و برانچه‌كه‌ت له‌ خواره‌وه‌دا دابنێ
-2. git push [my-fork-name] [the-name-of-my-branch]
+2. ]git push [my-fork-name] [the-name-of-my-branch
 ```
 
 
