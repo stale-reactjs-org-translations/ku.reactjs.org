@@ -20,8 +20,8 @@
 
 
 ### دامه‌زراندن
-
-```# كۆپییه‌ك له‌ رێپۆكه‌مان وه‌بگره‌:
+<div dir="ltr">
+```# كۆپییه‌ك له‌ رێپۆكه‌مان وه‌ربگره‌:
 git clone https://github.com/reactjs/ku.reactjs.org.git
 
 # بچۆره‌ ناو لقی سه‌ره‌كی پرۆژه‌كه‌
@@ -30,7 +30,7 @@ cd ku.reactjs.org
 # په‌یوه‌ستییه‌كانی npm داببه‌زێنه‌
 Yarn
 ```
- 
+</div>
 
 ### جێبه‌جێكردن
 
@@ -61,12 +61,24 @@ http://localhost:8000
 
 ```
 # ناوی به‌كارهێنه‌ری گیتهه‌به‌كه‌ی خۆت له‌م به‌سته‌ره‌ی خواره‌وه‌ دابنێ
+```
+<div dir="ltr">
+
+```
 1. git clone git@github.com:[username]/ku.reactjs.org.git
 2. cd ku.reactjs.org
 3. git checkout master
+```
+</div>
+```
 # به‌ دڵی خۆت، ناوی ئه‌و لقه‌ی دروستی ده‌كه‌یت له‌ خواره‌وه‌ دابنێ
+```
+<div dir="ltr">
+
+```
 4. git checkout -b the-name-of-my-branch
 ```
+</div>
 
 ### گۆڕانكاری بكه‌
 
