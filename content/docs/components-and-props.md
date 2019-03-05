@@ -1,6 +1,6 @@
 ---
 id: components-and-props
-title: Components and Props
+title: کۆمپۆنێنت و پرۆپس
 permalink: docs/components-and-props.html
 redirect_from:
   - "docs/reusable-components.html"
@@ -16,13 +16,13 @@ prev: rendering-elements.html
 next: state-and-lifecycle.html
 ---
 
-Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](/docs/react-component.html).
+کۆمپۆنێنت یان بە کوردی "پێکهێنەر"ەکان ڕێگات ئەدەن ڕووکار دابەش بکەی بەسەر پارچەی سەربەخۆ، بەکارهێنراوە و بتوانی بەجیا بیریان لێ بکەیتەوە. ئەم پەڕەیە پێشەکیەکە بۆ بیرۆکەی کۆمپۆنێنت. ئەتوانی زانیاری زیاتر لە [وردەکاری APIی کۆمپۆنێنت لێرە](/docs/react-component.html) بببینیت.
 
-Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
+وەکو بیرۆکە، کۆمپۆنێنت لە فەنکشنی جاڤاسکریپت ئەچن. تواناری وەرگرتنی تێخراوی (ئینپۆت)ی هەڕەمەکی و دروستکردنی دانەی ڕیئاکت React element کە لەسەر شاشە نیشاندراوێک پێناسە بکرێت پێیان.
 
-## Function and Class Components {#function-and-class-components}
+فەنکشن و پۆلی کۆمپۆنێنت {#function-and-class-components}
 
-The simplest way to define a component is to write a JavaScript function:
+ئاسانترین شێوازی پێناسەکردنی کۆمپۆنێنتێک نوسینی فەنکشنیکی جاڤاسکریپتە:
 
 ```js
 function Welcome(props) {
@@ -30,9 +30,9 @@ function Welcome(props) {
 }
 ```
 
-This function is a valid React component because it accepts a single "props" (which stands for properties) object argument with data and returns a React element. We call such components "function components" because they are literally JavaScript functions.
+ئەم فەنکشنە کۆمپۆنێنتێکی بەکاری ڕیئاکتە لەبەر ئەوەی تەنها "پرۆپ"/خاسیەتێک وەر ئەگرێ (پرۆپ کورتکراوەی پرۆپەرتیە تەبیعی) کە ئارگومێنتێکی بە داتاوە تێدایە و دانەیەک/ئەلەمێنتێکی ڕیئاکت دروست ئەکات. بەمانە ئەڵێین کۆمپۆنێنتی فەنکشنی چونکە هەر ئەوەیە فەنکشنێکی جاڤاسکریپتی ڕووتە.
 
-You can also use an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) to define a component:
+ئەتوانی کلاس/پۆلێکی [ES6](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) بەکاربهێنی بۆ پێناسەکردنی کۆمپۆنێنتێک:
 
 ```js
 class Welcome extends React.Component {
@@ -42,34 +42,34 @@ class Welcome extends React.Component {
 }
 ```
 
-The above two components are equivalent from React's point of view.
+بە نیسبەت ڕیئاکت ئە دوانەی سەرەوە (کلاسەکە و فەنکشنەکە) یەک شتن.
 
-Classes have some additional features that we will discuss in the [next sections](/docs/state-and-lifecycle.html). Until then, we will use function components for their conciseness.
+پۆل/کلاسەکان هەندێ تایبەتمەندی تریان هەیە کە لە [بەشی داهاتوو](/docs/state-and-lifecycle.html) باسیان ئەکەین. بەڵام تا ئەو کاتە کۆمپۆنێنتی فەنکشنی بەکار ئەهێنین چونکە کورتترن.
 
-## Rendering a Component {#rendering-a-component}
+## وێنەکردنی کۆمپۆنێنتێک {#rendering-a-component}
 
-Previously, we only encountered React elements that represent DOM tags:
+پێشتر تەنها ئەو یەکانەی ڕیئاکت هاتە بەردەممان کە بۆخۆیان تاگی DOMن وەک:
 
 ```js
 const element = <div />;
 ```
 
-However, elements can also represent user-defined components:
+بەڵام ئەکرێ یەکەکە خۆی شتێک بێ بەکارهێنەر دروستی کردبێت، وەک:
 
 ```js
 const element = <Welcome name="Sara" />;
 ```
 
-When React sees an element representing a user-defined component, it passes JSX attributes to this component as a single object. We call this object "props".
+کاتێ ڕیئاکت چاوی بە یەکەیەک ئەکەوێ کە بەکارهێنەر دروستی کردبێ، خاسیەتەکان (ئەتریبویت)ی JSXەکە ئەگوازێتەوە بۆ کۆمپۆنێنتەکە وەک یەک ئۆبجێکت (تەنی جاڤاسکریپت) ئا بەمانە ئەوترێ "پرۆپ".
 
-For example, this code renders "Hello, Sara" on the page:
+بۆ نمونە، ئەم کۆدە لەسەر پەڕەکە "سڵاو هێرۆ" وێنا ئەکات:
 
 ```js{1,5}
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
-const element = <Welcome name="Sara" />;
+const element = <Welcome name="Hero" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
@@ -78,24 +78,23 @@ ReactDOM.render(
 
 [](codepen://components-and-props/rendering-a-component)
 
-Let's recap what happens in this example:
+کەواتە پوختەی ئەم نمونەیە چی بوو:
 
-1. We call `ReactDOM.render()` with the `<Welcome name="Sara" />` element.
-2. React calls the `Welcome` component with `{name: 'Sara'}` as the props.
-3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
-4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
+1. بانگی `ReactDOM.render()` ئەکەین بە یەکەی `<Welcome name="Hero" />`.
+2. ڕیئاک بانگی کۆمپۆنێنتی `Welcome` ئەکات بە `{name: 'Hero'}` پرۆپی name.
+3. کۆمپۆنێنتی `Welcome` ئەم تاگە ئەگەڕێنێتەوە `<h1>Hello, Hero</h1>` وەک ئەنجامی کۆتایی.
+4. ڕیئاکت خۆی DOM تازە ئەکاتەوە (تایبەتە بە ڕئیکات) کە ئەم تاگە وابێت `<h1>Hello, Hero</h1>`.
 
->**Note:** Always start component names with a capital letter.
+>**تێبینی:** هەمیشە با کۆمپۆنێنتەکانت بە پیتی گەورە/کەپیتاڵ دەست پێ بکەن.
 >
->React treats components starting with lowercase letters as DOM tags. For example, `<div />` represents an HTML div tag, but `<Welcome />` represents a component and requires `Welcome` to be in scope.
->
->To learn more about the reasoning behind this convention, please read [JSX In Depth](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized).
+>ڕیئاکت کۆمپۆنێنتێک بە پیتی بچوک دەست پێ بکات وای دا ئەنێت تاگێکی DOMە. بۆ نمونە `<div />` نمونەی دیڤ'ێکی HTMLە، بەڵام `<Welcome />` بریتیە لە کۆمپۆنێنتێک و پێویستی بەوەیە کە `Welcome` لە بوار/سکۆپ'دا ئامادە بێت.
+>بۆ زانیاری زیاتر دەربارەی ئەم لۆجیکەی پشت ئەم عادەتە، تکایە [JSX بە قوڵی](/docs/jsx-in-depth.html#user-defined-components-must-be-capitalized) بخوێنەوە.
 
-## Composing Components {#composing-components}
+## دانانی کۆمپۆنێنت {#composing-components}
 
-Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.
+کۆمپۆنێنتەکان ئەتوانن هێما بۆ کۆمپۆنێنتی تر بکەن لەکاتی دەرهاویشتندا. ئەمە وا ئەکات هەمان کۆمپۆنێنتکردن بەکار بهێنرێ لە هەموو ئاستێکی وردەکاریدا. دوگمەیەکە، فۆرمێک، دایەلۆگ بۆکسێک، شاشەیەک: لە ئاپەکانی ڕیئاکتدا، هەموو ئەمانە بە گشتی ئەکرێ وەک کۆمپۆنێنت پێناسە بکرێن.
 
-For example, we can create an `App` component that renders `Welcome` many times:
+بۆ نمونە ئەکرێ تەواوی ئاپەکە وەک کۆمپۆنێنتی `App` پێناسە بکەین کە `Welcome` چەن جارێک نیشان بدات، بەم شێوەیە:
 
 ```js{8-10}
 function Welcome(props) {
@@ -105,9 +104,9 @@ function Welcome(props) {
 function App() {
   return (
     <div>
-      <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
+      <Welcome name="Hero" />
+      <Welcome name="Broosk" />
+      <Welcome name="Goran" />
     </div>
   );
 }
@@ -120,13 +119,13 @@ ReactDOM.render(
 
 [](codepen://components-and-props/composing-components)
 
-Typically, new React apps have a single `App` component at the very top. However, if you integrate React into an existing app, you might start bottom-up with a small component like `Button` and gradually work your way to the top of the view hierarchy.
+ئاساییە، ئاپی نوێی ڕیئاکت بریتی بێ لە تەنها کۆمپۆنێنتێک بەناوی `App` لە سەری سەرەوە. بەڵام ، ئەگەر ڕیئاکتت تێکەڵکرد لەگەڵ ئاپێکی حازدا، ئەکرێ لە ژێرەوە دەستپێ بکەیت بۆ نمونە لە دوگمەیەک`Button`ەوە دەست پێ بکەیت و هەنگاو هەنگاو تا بگەیتە ئاستی سەرەوەی پلەکانی ئاپەکەت. 
 
-## Extracting Components {#extracting-components}
+## دەرهێنانی کۆمپۆنێنت {#extracting-components}
 
-Don't be afraid to split components into smaller components.
+مەترسە لەوەی کۆمپۆنێنتەکانت وردکەیتەوە بۆ کۆمپۆنێنتی بچوکتر.
 
-For example, consider this `Comment` component:
+بۆ نمونە کۆمپۆنێنتی`Comment` لەبەرچاوگرە:
 
 ```js
 function Comment(props) {
@@ -154,11 +153,11 @@ function Comment(props) {
 
 [](codepen://components-and-props/extracting-components)
 
-It accepts `author` (an object), `text` (a string), and `date` (a date) as props, and describes a comment on a social media website.
+پرۆپسی `author` (ئۆبجێک)، `text` (سترینگ)، و `date` (ڕێکەوت) وەر ئەگرێت، پێناسەی کۆمێنتێکی سەر سایتێکی تۆڕی کۆمەڵایەتی ئەکات.
 
-This component can be tricky to change because of all the nesting, and it is also hard to reuse individual parts of it. Let's extract a few components from it.
+ئەم کۆمپۆنێنتە کەمێ سەختە دەستکاری کردنی لەبەر ئەو لەناویەک دانانە، وە سەختیشە بەشەکانی بەکاربهێنرێتەوە. با هەندێ پێکهێنەری دەربهێنین.
 
-First, we will extract `Avatar`:
+یەکەم شت، `Avatar` دەرئەهێنین:
 
 ```js{3-6}
 function Avatar(props) {
@@ -171,11 +170,11 @@ function Avatar(props) {
 }
 ```
 
-The `Avatar` doesn't need to know that it is being rendered inside a `Comment`. This is why we have given its prop a more generic name: `user` rather than `author`.
+پێکهێنەری `Avatar` پێویست ناکات بزانێ کەوا لەناو کۆمپۆنێنتێکی وەک `Comment`دایە. لەبەر ئەوەشە پرۆپسەکەمان گۆڕی بۆ شتی گشتی تر: `user` نەک `author`.
 
-We recommend naming props from the component's own point of view rather than the context in which it is being used.
+ئێمە لامان باشە ناوی پرۆپسەکانت لە چاوی کۆمپۆنێنتەکەوە دابنێێت نەک لە چوارچێوەی بەکارهێنانەکەیدا ناوزەدیان بکەیت.
 
-We can now simplify `Comment` a tiny bit:
+ئیتر ئەتوانین کۆمپۆنێنتی `Comment` کەمێک سادە بکەینەوە:
 
 ```js{5}
 function Comment(props) {
@@ -198,7 +197,7 @@ function Comment(props) {
 }
 ```
 
-Next, we will extract a `UserInfo` component that renders an `Avatar` next to the user's name:
+ئەنجا بەشی `UserInfo` دەر ئەهێنین وەک کۆمپۆنێنتێک کە بتوانێت `Avatar` لە تەنیشت ناوی بەکارهێنەرەکە دانێت:
 
 ```js{3-8}
 function UserInfo(props) {
@@ -213,7 +212,7 @@ function UserInfo(props) {
 }
 ```
 
-This lets us simplify `Comment` even further:
+ئیتر ئەمە ئاوا `Comment` زیاتر سادە ئەکاتەوە:
 
 ```js{4}
 function Comment(props) {
@@ -233,11 +232,12 @@ function Comment(props) {
 
 [](codepen://components-and-props/extracting-components-continued)
 
-Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times (`Button`, `Panel`, `Avatar`), or is complex enough on its own (`App`, `FeedStory`, `Comment`), it is a good candidate to be a reusable component.
+دەرهێنانی کۆمپۆنێنت لەوەیە وەک ئیشێکی سەخت بێتە بەرچاوت یەکەمجار، بەڵام کاتێک خەرمانێ کۆمپۆنێنت هەبێ بۆ ئەوەی ئەپێکی گەورەی پێ دروست بکەی دوایی ژیانت ئاسان ئەکات. یاسایەکی گشتی لەپێش چاوت بێ ئەوەیە گەر بەشێکی ڕووکارەکەت چەن جارێک بەکارهاتەوە
+(`Button`, `Panel`, `Avatar`)، یاخوود هەر خۆی بۆخۆی ئاڵۆزە کەمێک (`App`, `FeedStory`, `Comment`)، ئیتر ئەوە کاندیدیکی چاکە ورد بکرێتەوە.
 
-## Props are Read-Only {#props-are-read-only}
+## پرۆپس نەگۆڕن {#props-are-read-only}
 
-Whether you declare a component [as a function or a class](#function-and-class-components), it must never modify its own props. Consider this `sum` function:
+کاتێک کۆمپۆنێنتێک دروست ئەکەی [چ بە کلاس یان فەنکشن](#function-and-class-components)، نابێ بەهیچ شێوەیەک پرۆپسەکانی خۆی دەستکاری بکات. فەنکشنی کۆکردنەوەی `sum` لەبەرچاو گرە:
 
 ```js
 function sum(a, b) {
@@ -245,9 +245,9 @@ function sum(a, b) {
 }
 ```
 
-Such functions are called ["pure"](https://en.wikipedia.org/wiki/Pure_function) because they do not attempt to change their inputs, and always return the same result for the same inputs.
+ئەم فەنکشنانە بە ["خاوێن"](https://en.wikipedia.org/wiki/Pure_function) ناو ئەبرێن چونکە "پێدراو" یان ئینپوتەکانیان دەستکاری ناکەن و هەمیشە هەمان نرخ ئەدەن بەدەستەوە بۆ هەمان پێدراو.
 
-In contrast, this function is impure because it changes its own input:
+جیاواز لەمە، ئەم فەنکشنەی خوارەوە "ناخاوێن"ە چونکە پێدراوەکەی ئەگۆڕێت:
 
 ```js
 function withdraw(account, amount) {
@@ -255,8 +255,8 @@ function withdraw(account, amount) {
 }
 ```
 
-React is pretty flexible but it has a single strict rule:
+ڕیئاکت تا ڕادیەکی باش نەرمە بەڵام یەک یاسای گیری هەیە:
 
-**All React components must act like pure functions with respect to their props.**
+**هەموو کۆمپۆنێنتەکانی ڕیئاکت ئەبێ وەک فەنکشنی خاوێن هەڵسوکەوت لەگەڵ پرۆپسەکانیان بکەن**
 
-Of course, application UIs are dynamic and change over time. In the [next section](/docs/state-and-lifecycle.html), we will introduce a new concept of "state". State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.
+بەدڵنیایەوە، ڕووکارەکانی پرۆگرامەکان جوڵاون ئەگۆڕین بەپێی کات. لە بەشی [بەشی داهاتوو](/docs/state-and-lifecycle.html)دا بابەتێکی تر ئەناسێنین بەناوی "ستەیت" یان دۆخ. ستیەت ڕێگا ئەدات کۆمپۆنێنتەکانی ڕیئاکت دەرکراوەکانیان بەدرێژایی کات بگۆڕن بەپێی کردارەکانی بەکارهێنەر، وەڵامە ڕایەڵەییەکان/نێتوێرک، یان هەرشتێکی تر، بەبێ ئەوەی یاساکەی سەرەوە بشکێنن.
