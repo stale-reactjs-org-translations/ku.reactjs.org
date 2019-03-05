@@ -1,6 +1,6 @@
 ---
 id: components-and-props
-title: Components and Props
+title: کۆمپۆنێنت و پرۆپەرتی
 permalink: docs/components-and-props.html
 redirect_from:
   - "docs/reusable-components.html"
@@ -16,13 +16,13 @@ prev: rendering-elements.html
 next: state-and-lifecycle.html
 ---
 
-Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](/docs/react-component.html).
+کۆمپۆنێنت یان بە کوردی "یەکە"کان ڕێگات ئەدەن ڕووکار دابەش بکەی بەسەر پارچەی سەربەخۆ، بەکارهێنراوە و بتوانی بەجیا بیریان لێ بکەیتەوە. ئەم پەڕەیە پێشەکیەکە بۆ بیرۆکەی کۆمپۆنێنت. ئەتوانی زانیاری زیاتر لە [وردەکاری APIی کۆمپۆنێنت لێرە](/docs/react-component.html) بببینیت.
 
-Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
+وەکو بیرۆکە، کۆمپۆنێنت لە فەنکشنی جاڤاسکریپت ئەچن. تواناری وەرگرتنی تێخراوی (ئینپۆت)ی هەڕەمەکی و دروستکردنی دانەی ڕیئاکت React element کە لەسەر شاشە نیشاندراوێک پێناسە بکرێت پێیان.
 
-## Function and Class Components {#function-and-class-components}
+فەنکشن و پۆلی کۆمپۆنێنت {#function-and-class-components}
 
-The simplest way to define a component is to write a JavaScript function:
+ئاسانترین شێوازی پێناسەکردنی کۆمپۆنێنتێک نوسینی فەنکشنیکی جاڤاسکریپتە:
 
 ```js
 function Welcome(props) {
@@ -30,9 +30,9 @@ function Welcome(props) {
 }
 ```
 
-This function is a valid React component because it accepts a single "props" (which stands for properties) object argument with data and returns a React element. We call such components "function components" because they are literally JavaScript functions.
+ئەم فەنکشنە کۆمپۆنێنتێکی بەکاری ڕیئاکتە لەبەر ئەوەی تەنها "پرۆپ"/خاسیەتێک وەر ئەگرێ (پرۆپ کورتکراوەی پرۆپەرتیە تەبیعی) کە ئارگومێنتێکە بە داتاوە و دانەیەکی ڕیئاکت دروست ئەکات. بەمانە ئەڵێین کۆمپۆنێنتی فەنکشنی چونکە هەر ئەوەیە فەنکشنێکی جاڤاسکریپتی ڕووتە.
 
-You can also use an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) to define a component:
+ئەتوانی کلاس/پۆلێکی [ES6](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) بەکاربهێنی بۆ پێناسەکردنی کۆمپۆنێنتێک:
 
 ```js
 class Welcome extends React.Component {
@@ -42,34 +42,34 @@ class Welcome extends React.Component {
 }
 ```
 
-The above two components are equivalent from React's point of view.
+بە نیسبەت ڕیئاکت ئە دوانەی سەرەوە (کلاسەکە و فەنکشنەکە) یەک شتن.
 
-Classes have some additional features that we will discuss in the [next sections](/docs/state-and-lifecycle.html). Until then, we will use function components for their conciseness.
+پۆل/کلاسەکان هەندێ تایبەتمەندی تریان هەیە کە لە [بەشی داهاتوو](/docs/state-and-lifecycle.html) باسیان ئەکەین. بەڵام تا ئەو کاتە کۆمپۆنێنتی فەنکشنی بەکار ئەهێنین چونکە کورتترن.
 
-## Rendering a Component {#rendering-a-component}
+## وێنەکردنی کۆمپۆنێنتێک {#rendering-a-component}
 
-Previously, we only encountered React elements that represent DOM tags:
+پێشتر تەنها ئەو یەکانەی ڕیئاکت هاتە بەردەممان کە بۆخۆیان تاگی DOMن وەک:
 
 ```js
 const element = <div />;
 ```
 
-However, elements can also represent user-defined components:
+بەڵام ئەکرێ یەکەکە خۆی شتێک بێ بەکارهێنەر دروستی کردبێت، وەک:
 
 ```js
 const element = <Welcome name="Sara" />;
 ```
 
-When React sees an element representing a user-defined component, it passes JSX attributes to this component as a single object. We call this object "props".
+کاتێ ڕیئاکت چاوی بە یەکەیەک ئەکەوێ کە بەکارهێنەر دروستی کردبێ، خاسیەتەکان (ئەتریبویت)ی JSXەکە ئەگوازێتەوە بۆ کۆمپۆنێنتەکە وەک یەک ئۆبجێکت (تەنی جاڤاسکریپت) ئا بەمانە ئەوترێ "پرۆپ".
 
-For example, this code renders "Hello, Sara" on the page:
+بۆ نمونە، ئەم کۆدە لەسەر پەڕەکە "سڵاو هێرۆ" وێنا ئەکات:
 
 ```js{1,5}
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
-const element = <Welcome name="Sara" />;
+const element = <Welcome name="Hero" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
@@ -78,14 +78,14 @@ ReactDOM.render(
 
 [](codepen://components-and-props/rendering-a-component)
 
-Let's recap what happens in this example:
+کەواتە پوختەی ئەم نمونەیە چی بوو:
 
-1. We call `ReactDOM.render()` with the `<Welcome name="Sara" />` element.
-2. React calls the `Welcome` component with `{name: 'Sara'}` as the props.
-3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
-4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
+1. بانگی `ReactDOM.render()` ئەکەین بە یەکەی `<Welcome name="Sara" />`.
+2. ڕیئاک بانگی کۆمپۆنێنتی `Welcome` ئەکات بە `{name: 'Hero'}` پرۆپی name.
+3. کۆمپۆنێنتی `Welcome` ئەم تاگە ئەگەڕێنێتەوە `<h1>Hello, Hero</h1>` وەک ئەنجامی کۆتایی.
+4. ڕیئاکت خۆی DOM تازە ئەکاتەوە (تایبەتە بە ڕئیکات) کە ئەم تاگە وابێت `<h1>Hello, Hero</h1>`.
 
->**Note:** Always start component names with a capital letter.
+>**تێبینی:** هەمیشە با کۆمپۆنێنتەکانت بە پیتی گەورە/کەپیتاڵ دەست پێ بکەن.
 >
 >React treats components starting with lowercase letters as DOM tags. For example, `<div />` represents an HTML div tag, but `<Welcome />` represents a component and requires `Welcome` to be in scope.
 >
