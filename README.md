@@ -65,7 +65,7 @@ http://localhost:8000
 2. cd ku.reactjs.org
 3. git checkout master
 # به‌ دڵی خۆت، ناوی ئه‌و لقه‌ی دروستی ده‌كه‌یت له‌ خواره‌وه‌ دابنێ
-4. ]git checkout -b [the-name-of-my-branch
+4. git checkout -b the-name-of-my-branch
 ```
 
 ### گۆڕانكاریی بكه‌
@@ -87,9 +87,9 @@ http://localhost:8000
 
 ```
 مه‌سجه‌كه‌ت له‌ خواره‌وه‌دا بنووسه #‌
-1. git add -A && git commit -m "[the-message]"
+1. git add -A && git commit -m "the-message"
 # ناوی فۆركه‌كه‌ت و برانچه‌كه‌ت له‌ خواره‌وه‌دا دابنێ
-2. ]git push [my-fork-name] [the-name-of-my-branch
+2. git push my-fork-name the-name-of-my-branch
 ```
 
 
