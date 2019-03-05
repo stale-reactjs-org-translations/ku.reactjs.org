@@ -1,70 +1,99 @@
-# reactjs.org
-
-This repo contains the source code and documentation powering [reactjs.org](https://reactjs.org/).
-
-## Getting started
-
-### Prerequisites
-
-1. Git
-1. Node: any 8.x version starting with 8.4.0 or greater
-1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
-1. A fork of the repo (for any contributions)
-1. A clone of the [reactjs.org repo](https://github.com/reactjs/reactjs.org) on your local machine
-
-### Installation
-
-1. `cd reactjs.org` to go into the project root
-1. `yarn` to install the website's npm dependencies
-
-### Running locally
-
-1. `yarn dev` to start the hot-reloading development server (powered by [Gatsby](https://www.gatsbyjs.org))
-1. `open http://localhost:8000` to open the site in your favorite browser
-
-## Contributing
-
-### Guidelines
-
-The documentation is divided into several sections with a different tone and purpose. If you plan to write more than a few sentences, you might find it helpful to get familiar with the [contributing guidelines](https://github.com/reactjs/reactjs.org/blob/master/CONTRIBUTING.md#guidelines-for-text) for the appropriate sections.
-
-### Create a branch
-
-1. `git checkout master` from any folder in your local `reactjs.org` repository
-1. `git pull origin master` to ensure you have the latest main code
-1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
-
-### Make the change
-
-1. Follow the "Running locally" instructions
-1. Save the files and check in the browser
-  1. Changes to React components in `src` will hot-reload
-  1. Changes to markdown files in `content` will hot-reload
-  1. If working with plugins, you may need to remove the `.cache` directory and restart the server
-
-### Test the change
-
-1. If possible, test any visual changes in all latest versions of common browsers, on both desktop and mobile.
-1. Run `yarn check-all` from the project root. (This will run Prettier, ESLint, and Flow.)
-
-### Push it
-
-1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fixed header logo on Android`) to stage and commit your changes
-1. `git push my-fork-name the-name-of-my-branch`
-1. Go to the [reactjs.org repo](https://github.com/reactjs/reactjs.org) and you should see recently pushed branches.
-1. Follow GitHub's instructions.
-1. If possible, include screenshots of visual changes. A Netlify build will also be automatically created once you make your PR so other people can see your change.
-
-## Translation
-
-If you are interested in translating `reactjs.org`, please see the current translation efforts at [isreacttranslatedyet.com](https://www.isreacttranslatedyet.com/).
 
 
-If your language does not have a translation and you would like to create one, please follow the instructions at [reactjs.org Translations](https://github.com/reactjs/reactjs.org-translation#translating-reactjsorg).
 
-## Troubleshooting
 
-- `yarn reset` to clear the local cache
+# وه‌شانی كوردی reactjs.org
 
-## License
-Content submitted to [reactjs.org](https://reactjs.org/) is CC-BY-4.0 licensed, as found in the [LICENSE-DOCS.md](https://github.com/open-source-explorer/reactjs.org/blob/master/LICENSE-DOCS.md) file.
+ئه‌م رێپۆیه‌ به‌ ئامانجی وه‌رگێڕانی دۆكیومنته‌یشنی ریاكت  (react)بۆ زمانی كوردی له‌ reactjs/reactjs.org فۆرك كراوه‌.
+
+به‌ره‌وپێشچوونه‌كانمان له‌ رێگه‌ی ئه‌م ماڵپه‌ڕه‌وه‌ ببینه‌: isreacttranslatedyet.com
+
+
+## با ده‌ستپێبكه‌ین!
+
+### پێویستییه‌كان
+
+
+⋅⋅* Git 
+⋅⋅* Node: وه‌شانی ٨ له‌ وه‌شانی ٨.٤.٠ به‌ره‌و سه‌ره‌وه‌
+⋅⋅* Yarn: (https://yarnpkg.com/lang/en/docs/install/)
+
+
+### دامه‌زراندن
+
+```# كۆپییه‌ك له‌ كۆگای كۆده‌كه‌مان وه‌بگره‌:
+git clone https://github.com/reactjs/ku.reactjs.org.git
+
+# بچۆره‌ ناو لقی سه‌ره‌كی پرۆژه‌كه‌
+cd ku.reactjs.org
+
+په‌یوه‌ستییه‌كانی # npm داببه‌زێنه‌
+Yarn
+```
+ 
+
+### جێبه‌جێكردن
+
+```# كۆپییه‌ك له‌ كۆگای كۆده‌كه‌مان بۆ ده‌ستپێكردنی سێرڤه‌ری خۆكار كه‌ له‌ وه‌رگیراوه‌
+yarn dev```
+
+
+ئه‌م به‌سته‌ره‌ له‌ گه‌ڕۆكه‌كاتدا بكه‌ره‌وه‌:
+http://localhost:8000
+
+
+## به‌شداری له‌ وه‌رگێڕان
+
+زۆرسوپاس بۆ هاوكاریت له‌ وه‌رگێڕانی دۆكیومێنته‌یشنی ریاكت بۆ زمانی كوردی، با ده‌ستپێبكه‌ین!
+
+### په‌ره‌یه‌ك هه‌ڵبژێره‌ بۆ وه‌رگێڕان
+
+له‌ [بابه‌تی #١]( https://github.com/reactjs/ku.reactjs.org/issues/1)، ئه‌و په‌ڕانه‌ی كه‌ پێویستییان به‌ وه‌رگێڕانه‌، ریزكراون. پێش هه‌موو شتێك، پێویسته‌ له‌ په‌ڕه‌كانی Core Pages ده‌ستپێبكه‌ین به‌و ریزبه‌ندییه‌ی ئاماژه‌ی پێكراوه‌. یه‌كێك له‌و په‌ڕانه‌ی كه‌ حه‌زت لێیه‌و ئاشنای پێی، هه‌ڵبژێره‌.
+
+تێبینی: ئه‌ی په‌ڕانه‌ی كه‌ ئه‌م هێمایه‌یان [x] به‌ ته‌نیشته‌وه‌یه‌، وه‌رگێردراون. ئه‌گه‌ر ناوی هه‌ركه‌سێك له‌ ته‌نیشت په‌ڕه‌یه‌ك دانرابێت، ئه‌وا، ئه‌ركی وه‌رگێڕانی ئه‌و په‌ڕه‌یه‌ له‌ ئه‌ستۆی ئه‌و كه‌سه‌دایه‌.
+
+له‌رێگه‌ی نووسینی كۆمێنته‌وه‌ له‌سه‌ر[بابه‌تی #١]( https://github.com/reactjs/ku.reactjs.org/issues/1)، مه‌ینته‌ینه‌ره‌كان ئگاداربكه‌نه‌وه‌ له‌و په‌ڕه‌یه‌ی ده‌تانه‌وێت وه‌ریبگێڕن، دوای په‌سه‌ند كردنی، ناوی خۆتان له‌ ته‌نیشت ئه‌و په‌ڕه‌یه‌ ده‌بینن و ئه‌ركی وه‌رگێڕانی ده‌گرنه‌ ئه‌ستۆ.
+
+### لقێك دروستبكه‌
+
+لقێك له‌ كۆگای سه‌ره‌كی وه‌ربگره‌ و كۆپییه‌كی له‌سه‌ر سیستمه‌كه‌ی خۆت دابنێ. دڵنیابه‌ره‌وه‌ كه‌ له‌سه‌ر لقی `master` یت. لقێكی نوێ دروستبكه‌و ناوێكی لێبنێ.
+
+```
+# ناوی به‌كارهێنه‌ری گیتهه‌به‌كه‌ی خۆت له‌م به‌سته‌ره‌ی خواره‌وه‌ دابنێ
+1. git clone git@github.com:[username]/ku.reactjs.org.git
+2. cd ku.reactjs.org
+3. git checkout master
+# به‌ دڵی خۆت، ناوی ئه‌و لقه‌ی دروستی ده‌كه‌یت له‌ خواره‌وه‌ دابنێ
+4. git checkout -b [the-name-of-my-branch]
+```
+
+### گۆڕانكاریی بكه‌
+
+شێوازی جێبه‌جێكردنی پرۆژه‌كه‌ له‌ سه‌ره‌وه‌دا باسكراوه‌. ئه‌و فایلانه‌ی كه‌ گۆرانكاریت تێدا كردوون، سه‌یڤییان بكه‌ و و ئه‌نجامه‌كه‌ی له‌ گه‌ڕۆكه‌كه‌تدا ببینه‌.  ئه‌نجامی ئه‌و فایلانه‌ی له‌ فۆلده‌ری  `src`و `content` ده‌ستكاریكراون، به‌ شێوه‌یه‌كی خۆكار له‌ گه‌ڕۆكه‌كه‌تدا، نیشانده‌درێت. 
+
+
+### تێست بكه‌
+
+ئه‌و گۆڕانكارییانه‌ی كردووتن، له‌ گه‌ڕۆكی جیاواز و له‌سه‌ر شاشه‌ی گه‌وره‌و و شاشه‌ی مۆبایل تێست تاقیبكه‌ره‌وه‌. پاشان، له‌ رێگه‌ی ئه‌م كۆمانده‌ی خواره‌وه‌ له‌ فۆلده‌ری سه‌ره‌كی پرۆژه‌كه‌، تێسته‌كه‌ن ره‌ن بكه‌. ئه‌گه‌ر ته‌نها وه‌رگێڕانت كردووه‌، نابێت هیچ كێشه‌یه‌كت لێره‌دا بۆ دروست ببێت.
+
+```
+1. yarn check-all
+```
+###گۆڕانكارییه‌كانت بنێره‌ بۆمان
+
+گۆرانكارییه‌كان به‌ نووسینی مه‌سجێكی گونجاو كۆمیت بكه و بۆ سێرڤه‌ری گیتهه‌بی بنێره‌. پاشان پوڵ ركوێستێك بنێره‌ بۆ لقی ku له‌ رێپۆ سه‌ره‌كییه‌كه‌وه‌. 
+
+```
+مه‌سجه‌كه‌ت له‌ خواره‌وه‌دا بنووسه #‌
+1. git add -A && git commit -m "[the-message]"
+# ناوی فۆركه‌كه‌ت و برانچه‌كه‌ت له‌ خواره‌وه‌دا دابنێ
+2. git push [my-fork-name] [the-name-of-my-branch]```
+
+### پول ریكوێست
+
+پاش ناردنی گۆرانكارییه‌كان بۆ فۆركه‌كه‌ی خۆتان، پول ریكوستێك له‌ه‌ فۆركه‌وه‌ بنێرن بۆ ku
+
+### كه‌مێك چاوه‌ڕێی پێداچوونه‌وه‌ بكه‌
+
+گۆرانكارییه‌كانت له‌ لایه‌ن تیمی مه‌ینته‌ینه‌ره‌وه‌، پێداچوونه‌وه‌یان بۆ ده‌كرێت و بۆچوونی خۆیان به‌ ئێوه‌ ده‌ڵێین. پاش په‌سه‌ند كردن، گۆرانكارییه‌كانتان زیاد ده‌كرێت. 
+
