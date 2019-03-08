@@ -118,9 +118,9 @@ ReactDOM.render(
 
 هه‌رچه‌نده‌ شتێكی ئاساییه‌ كه‌ `if statement` به‌كاربهێنیت بۆ ڕێنده‌ركردنی كۆمپۆنێنته‌كان به‌پێی حاڵه‌ت، به‌ڵام هه‌ندێكجار باشتر وایه‌ سینتاكسی كورتتر به‌كاربهێنیت. چه‌ند ڕێگایه‌ك هه‌یه‌ بۆ نووسینی كۆندیشن به‌ ئینڵاین له‌ JSX دا، له‌ خواره‌وه‌ باسكراوه‌.
 
-### Inline If with Logical && Operator {#inline-if-with-logical--operator}
+### If ی ئینڵاین و Logical && Operator
 
-You may [embed any expressions in JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
+ده‌توانیت هه‌ر [ئێكسپرێشنێك بخه‌یته‌ ناو JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) له‌ ڕێگه‌ی خستنییه‌ ناو كه‌وانه‌وه‌. ده‌توانیت ئۆپێره‌یته‌ری `&&` ش به‌كاربهێنیت. ده‌كرێت ئه‌مه‌ سوودێكی زۆری هه‌بێت بۆ به‌كارهێنانی ئیلیمێنتێك به‌ پشت به‌ستن به‌ حاڵه‌تێك.‌
 
 ```js{6-10}
 function Mailbox(props) {
@@ -144,11 +144,11 @@ ReactDOM.render(
 );
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/ozJddz?editors=0010)
+[**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/ozJddz?editors=0010)
 
-It works because in JavaScript, `true && expression` always evaluates to `expression`, and `false && expression` always evaluates to `false`.
+ئه‌وه‌ی كردمان كارده‌كات له‌به‌رئه‌وه‌ی `true && expression` هه‌میشه‌ ده‌كاته‌ `expression`، هه‌روه‌ها `false && expression` هه‌میشه‌ ده‌كاته‌ `false`.
 
-Therefore, if the condition is `true`, the element right after `&&` will appear in the output. If it is `false`, React will ignore and skip it.
+له‌به‌رئه‌وه‌، ئه‌گه‌ر كۆندیشنه‌كه‌ `true` بێت، ئه‌و ئیلیمێنته‌ی ڕاسته‌وخۆ دوای `&&` دێت، پیشان ده‌درێت. به‌ڵام ئه‌گه‌ر `false` بوو، ڕیاكت تێپه‌ڕی ده‌كات و هیچ ناگۆڕێت
 
 ### Inline If-Else with Conditional Operator {#inline-if-else-with-conditional-operator}
 
