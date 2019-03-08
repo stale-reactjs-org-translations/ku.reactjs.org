@@ -1,6 +1,6 @@
 ---
 id: conditional-rendering
-title: Conditional Rendering
+title: ڕێنده‌ركردنی كۆندیشناڵ
 permalink: docs/conditional-rendering.html
 prev: handling-events.html
 next: lists-and-keys.html
@@ -8,11 +8,11 @@ redirect_from:
   - "tips/false-in-jsx.html"
 ---
 
-In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
+له‌ ڕیاكتدا، ده‌توانیت كۆمپۆنێنتێك دروست بكه‌یت كه‌ به‌و جۆره‌ مامه‌ڵه‌ بكات كه‌ تۆ ده‌ته‌وێت. پاشان، ده‌توانیت ته‌نها ئه‌و به‌شه‌ی ڕێنده‌ر بكه‌یت كه‌ خۆت ده‌ته‌وێت، به‌پێی سته‌یتی ئه‌پلیكه‌یشنه‌كه‌ت.
 
-Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like [`if`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) or the [conditional operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to create elements representing the current state, and let React update the UI to match them.
+ڕێنده‌ركردنی كۆندیشنال له‌ ڕیاكتدا به‌ هه‌مان جۆری كۆندیشن كارده‌كات كه‌ له‌ جاڤاسجكریپتدا هه‌یه‌. ئۆپێره‌یته‌ره‌كانی جاڤاسكریپت به‌كاربهێنه‌ وه‌ك [`if`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) یاخود [conditional operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) بۆ ئه‌وه‌ی هه‌ندێك ئیلیمێنت دروست بكه‌یت به‌ پشت به‌ستن به‌ سته‌یتی ئه‌پلیكه‌یشنه‌كه‌ و پاشان ڕیاكت مالپه‌ڕه‌كه‌ به‌پێی ویستی تۆ ئه‌پده‌یت ده‌كاته‌وه‌.
 
-Consider these two components:
+ته‌ماشای ئه‌و دوو كۆمپۆنێنته‌ بكه‌:
 
 ```js
 function UserGreeting(props) {
