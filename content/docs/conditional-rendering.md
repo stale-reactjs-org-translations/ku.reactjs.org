@@ -16,15 +16,15 @@ redirect_from:
 
 ```js
 function UserGreeting(props) {
-  return <h1>Welcome back!</h1>;
+  return <h1>به‌خێربێیته‌وه‌</h1>;
 }
 
 function GuestGreeting(props) {
-  return <h1>Please sign up.</h1>;
+  return <h1>تكایه‌ خۆت ناونووس بكه‌.</h1>;
 }
 ```
 
-We'll create a `Greeting` component that displays either of these components depending on whether a user is logged in:
+كۆمپۆنێنتی `Greeting` دروست ده‌كه‌ین كه‌ یه‌كێك له‌و دوو كۆمپۆنێنته‌ی سه‌ره‌وه‌ پیشان ده‌دات به‌ پشت به‌ستن به‌ سته‌یتی ئه‌پلیكه‌یشنه‌كه‌مان:
 
 ```javascript{3-7,11,12}
 function Greeting(props) {
@@ -36,22 +36,21 @@ function Greeting(props) {
 }
 
 ReactDOM.render(
-  // Try changing to isLoggedIn={true}:
+  // تاقیبكه‌ره‌وه‌ بیگۆڕیت بۆ isLoggedIn={true}
   <Greeting isLoggedIn={false} />,
   document.getElementById('root')
 );
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011)
+[**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011)
 
-This example renders a different greeting depending on the value of `isLoggedIn` prop.
+ئه‌م نموونه‌یه‌ هه‌ر جارك نووسینێكی جیاواز پیشان ده‌دات به‌ پێی نرخی پرۆپی `isLoggedIn`.
 
-### Element Variables {#element-variables}
+### ئیلیمێنته‌كانی ڤاریه‌بڵ {#element-variables}
 
-You can use variables to store elements. This can help you conditionally render a part of the component while the rest of the output doesn't change.
+ده‌توانیت ڤاریه‌بڵ به‌كاربهێنیت تاوه‌كه‌ ئیلیمێنتی تیادا هه‌لبگریت. ئه‌مه‌ ده‌توانێت به‌پێی حاڵه‌ته‌كه‌ ڕێنده‌ری به‌شێكی كۆمپۆنێنته‌كه‌ بكات به‌بێ گۆڕینی هیچ به‌شێكی تر.
 
-Consider these two new components representing Logout and Login buttons:
-
+ته‌ماشای ئه‌و دوو كۆمپۆنێنته‌ بكه‌ كه‌ بۆ دوگمه‌ی Login و Logout به‌كاردێن:
 ```js
 function LoginButton(props) {
   return (
@@ -69,10 +68,9 @@ function LogoutButton(props) {
   );
 }
 ```
+له‌م نموونه‌یه‌ی خواره‌وه‌دا، [كۆمپۆنێنتی سته‌یتدار](/docs/state-and-lifecycle.html#adding-local-state-to-a-class) درووست ده‌كه‌ین و ناوی ده‌نێین `LoginControl`.
 
-In the example below, we will create a [stateful component](/docs/state-and-lifecycle.html#adding-local-state-to-a-class) called `LoginControl`.
-
-It will render either `<LoginButton />` or `<LogoutButton />` depending on its current state. It will also render a `<Greeting />` from the previous example:
+لێره‌دا یه‌كێك له‌ `<LoginButton />` یاخود `<LogoutButton />` ڕێنده‌ر ده‌كات، به‌ پێی سته‌یته‌كه‌. هه‌روه‌ها `<Greeting />` ڕێنده‌ر ده‌كات كه‌ له‌ نموونه‌كه‌ی پێشووتریشدا به‌كارمان هێنا:
 
 ```javascript{20-25,29,30}
 class LoginControl extends React.Component {
@@ -116,9 +114,9 @@ ReactDOM.render(
 );
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)
+[**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)
 
-While declaring a variable and using an `if` statement is a fine way to conditionally render a component, sometimes you might want to use a shorter syntax. There are a few ways to inline conditions in JSX, explained below.
+هه‌رچه‌نده‌ شتێكی ئاساییه‌ كه‌ `if statement` به‌كاربهێنیت بۆ ڕێنده‌ركردنی كۆمپۆنێنته‌كان به‌پێی حاڵه‌ت، به‌ڵام هه‌ندێكجار باشتر وایه‌ سینتاكسی كورتتر به‌كاربهێنیت. چه‌ند ڕێگایه‌ك هه‌یه‌ بۆ نووسینی كۆندیشن به‌ ئینڵاین له‌ JSX دا، له‌ خواره‌وه‌ باسكراوه‌.
 
 ### Inline If with Logical && Operator {#inline-if-with-logical--operator}
 
