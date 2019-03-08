@@ -1,7 +1,7 @@
 ---
-title: An Application
+title: ئه‌پلیكه‌یشنێك
 order: 2
 domid: todos-example
 ---
 
-Using `props` and `state`, we can put together a small Todo application. This example uses `state` to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
+به‌ به‌كارهێنانی `props` و `state` ده‌توانین ئه‌پلیكه‌شنێكی بچووك دروست بكه‌ین. ئه‌م نموونه‌یه‌ `state` به‌كارده‌هێنێت بۆ به‌ به‌رده‌وامی وه‌رگرتنی لیستی ئه‌و كارانه‌ی كه‌ ده‌ته‌وێت بیكه‌یت له‌گه‌ڵ ئه‌و تێكسته‌ی به‌كارهێنه‌ر داخڵی ده‌كات. هه‌رچه‌نده‌ وا ده‌رده‌كه‌وێت كه‌ ئیڤێنت هاندڵه‌ره‌كان به‌ ئینڵاین ڕێنده‌ر كراون، ئه‌وان له‌ ڕاستیدا له‌ ڕێگه‌ی ئیڤێنت دێلیگه‌یشنه‌وه‌ كۆده‌كرێنه‌وه‌ و به‌رهه‌م ده‌هێنرێن.

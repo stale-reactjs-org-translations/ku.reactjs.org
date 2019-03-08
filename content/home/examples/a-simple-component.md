@@ -1,9 +1,11 @@
 ---
-title: A Simple Component
+title: كۆمپۆنێنتێكی ساده‌
 order: 0
 domid: hello-example
 ---
+ 
+كۆمپۆنێنته‌كانی ڕیاكت مێسۆدی `render()` دروستده‌كه‌ن كه‌ ئه‌ویش داتا وه‌رده‌گرێ وه‌ك ئینپوت و ئه‌وه‌ ده‌گه‌ڕێنێته‌وه‌ كه‌ پێویسته‌ پیشان بدرێت. 
 
-React components implement a `render()` method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by `render()` via `this.props`.
+ئه‌م نموونه‌یه‌ سینتاكسێكی هاوشێوه‌ی XML به‌كارده‌هێنێت كه‌ پێی ده‌وترێت JSX. ئه‌و داتایه‌ی كه‌ نێردراوه‌ بۆ هه‌ر كۆمپۆنێنتێك ده‌توانرێت له‌لایه‌ن مێسۆدی `render()` به‌كار بهێنرێت له‌ ڕێگه‌ی `this.props`.
 
-**JSX is optional and not required to use React.** Try the [Babel REPL](babel://es5-syntax-example) to see the raw JavaScript code produced by the JSX compilation step.
+تۆ سه‌ركه‌شیت له‌ به‌كارهێنانی** JSX و مه‌رج نیه‌ هه‌موو جارێك به‌كاری‌ بهێنیت.** [Babel REPL](babel://es5-syntax-example) تاقی بكه‌ره‌وه‌ تاوه‌كو ئه‌و كۆدی جاڤاسكریپته‌ ببینیت كه‌ له‌لایه‌ن JSX به‌رهه‌م ده‌هێنرێت.
