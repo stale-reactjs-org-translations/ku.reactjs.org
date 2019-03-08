@@ -17,16 +17,16 @@ class MarkdownEditor extends React.Component {
   render() {
     return (
       <div className="MarkdownEditor">
-        <h3>Input</h3>
+        <h3>ئینپوت</h3>
         <label htmlFor="markdown-content">
-          Enter some markdown
+          هه‌ندێك ماركداون داخڵ بكه‌
         </label>
         <textarea
           id="markdown-content"
           onChange={this.handleChange}
           defaultValue={this.state.value}
         />
-        <h3>Output</h3>
+        <h3>ئه‌نجام</h3>
         <div
           className="content"
           dangerouslySetInnerHTML={this.getRawMarkup()}
