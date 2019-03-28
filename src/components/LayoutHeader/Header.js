@@ -18,6 +18,7 @@ import logoSvg from 'icons/logo.svg';
 
 const Header = ({location}: {location: Location}) => (
   <header
+  dir="rtl"
     css={{
       backgroundColor: colors.darker,
       color: colors.white,
@@ -62,7 +63,6 @@ const Header = ({location}: {location: Location}) => (
             },
           }}
           to="/">
-          <img src={logoSvg} alt="" height="20" />
           <span
             css={{
               color: 'inherit',
@@ -88,6 +88,7 @@ const Header = ({location}: {location: Location}) => (
             }}>
             React
           </span>
+          <img src={logoSvg} alt="" height="20" />
         </Link>
 
         <nav
@@ -122,22 +123,22 @@ const Header = ({location}: {location: Location}) => (
           }}>
           <HeaderLink
             isActive={location.pathname.includes('/docs/')}
-            title="Docs"
+            title="دۆكس"
             to="/docs/getting-started.html"
           />
           <HeaderLink
             isActive={location.pathname.includes('/tutorial/')}
-            title="Tutorial"
+            title="فێركاری"
             to="/tutorial/tutorial.html"
           />
           <HeaderLink
             isActive={location.pathname.includes('/blog')}
-            title="Blog"
+            title="بلۆگ"
             to="/blog/"
           />
           <HeaderLink
             isActive={location.pathname.includes('/community/')}
-            title="Community"
+            title="مه‌كۆ"
             to="/community/support.html"
           />
         </nav>
@@ -158,9 +159,10 @@ const Header = ({location}: {location: Location}) => (
             //width: 'calc(100% / 4)',
             //},
           }}>
-          <Link
+          <a
             css={{
               padding: '5px 10px',
+              marginRight: 10,
               whiteSpace: 'nowrap',
               ...fonts.small,
 
@@ -178,9 +180,18 @@ const Header = ({location}: {location: Location}) => (
                 display: 'none',
               },
             }}
-            to="/versions">
-            v{version}
-          </Link>
+            href="https://github.com/facebook/react/"
+            target="_blank"
+            rel="noopener">
+            GitHub
+            <ExternalLinkSvg
+              cssProps={{
+                marginLeft: 5,
+                verticalAlign: -2,
+                color: colors.subtle,
+              }}
+            />
+          </a>
           <Link
             css={{
               display: 'flex',
@@ -212,39 +223,8 @@ const Header = ({location}: {location: Location}) => (
               Languages
             </span>
           </Link>
-          <a
-            css={{
-              padding: '5px 10px',
-              marginLeft: 10,
-              whiteSpace: 'nowrap',
-              ...fonts.small,
-
-              ':hover': {
-                color: colors.brand,
-              },
-
-              ':focus': {
-                outline: 0,
-                backgroundColor: colors.lighter,
-                borderRadius: 15,
-              },
-
-              [media.lessThan('large')]: {
-                display: 'none',
-              },
-            }}
-            href="https://github.com/facebook/react/"
-            target="_blank"
-            rel="noopener">
-            GitHub
-            <ExternalLinkSvg
-              cssProps={{
-                marginLeft: 5,
-                verticalAlign: -2,
-                color: colors.subtle,
-              }}
-            />
-          </a>
+          
+          
         </div>
       </div>
     </Container>

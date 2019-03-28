@@ -18,6 +18,7 @@ import ossLogoPng from 'images/oss_logo.png';
 
 const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
   <footer
+  dir="rtl"
     css={{
       backgroundColor: colors.darker,
       color: colors.white,
@@ -36,14 +37,14 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
           flexWrap: 'wrap',
 
           [media.between('small', 'medium')]: {
-            paddingRight: layoutHasSidebar ? 240 : null,
+            paddingLeft: layoutHasSidebar ? 240 : null,
           },
 
           [media.between('large', 'largerSidebar')]: {
-            paddingRight: layoutHasSidebar ? 280 : null,
+            paddingLeft: layoutHasSidebar ? 280 : null,
           },
           [media.between('largerSidebar', 'sidebarFixed', true)]: {
-            paddingRight: layoutHasSidebar ? 380 : null,
+            paddingLeft: layoutHasSidebar ? 380 : null,
           },
         }}>
         <div
@@ -56,11 +57,11 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             },
             [media.greaterThan('xlarge')]: {
               width: 'calc(100% / 3 * 2)',
-              paddingLeft: 40,
+              paddingRight: 40,
             },
           }}>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>Docs</MetaTitle>
+            <MetaTitle onDark={true}>دۆكس</MetaTitle>
             {sectionListDocs.map(section => {
               const defaultItem = section.items[0];
               return (
@@ -73,52 +74,52 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             })}
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>Channels</MetaTitle>
+            <MetaTitle onDark={true}>كه‌ناڵه‌كان</MetaTitle>
             <ExternalFooterLink
               href="https://github.com/facebook/react"
               target="_blank"
               rel="noopener">
-              GitHub
+              گیتهه‌ب
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://stackoverflow.com/questions/tagged/reactjs"
               target="_blank"
               rel="noopener">
-              Stack Overflow
+              ستاك ئۆڤه‌رفلۆ
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://discuss.reactjs.org"
               target="_blank"
               rel="noopener">
-              Discussion Forum
+              مه‌كۆی گفتوگۆ
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://discord.gg/0ZcbPKXt5bZjGY5n"
               target="_blank"
               rel="noopener">
-              Reactiflux Chat
+              چاتی ریاكتیفڵه‌كس
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://dev.to/t/react"
               target="_blank"
               rel="noopener">
-              DEV Community
+              كۆمه‌ڵگه‌ی په‌ره‌پێده‌ران
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://www.facebook.com/react"
               target="_blank"
               rel="noopener">
-              Facebook
+              فه‌یسبووك
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://twitter.com/reactjs"
               target="_blank"
               rel="noopener">
-              Twitter
+              تویته‌ر
             </ExternalFooterLink>
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>Community</MetaTitle>
+            <MetaTitle onDark={true}>مه‌كۆ</MetaTitle>
             {sectionListCommunity.map(section => (
               <FooterLink
                 to={`/community/${section.items[0].id}.html`}
@@ -128,24 +129,26 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             ))}
           </FooterNav>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
-            <MetaTitle onDark={true}>More</MetaTitle>
-            <FooterLink to="/tutorial/tutorial.html">Tutorial</FooterLink>
-            <FooterLink to="/blog/">Blog</FooterLink>
+            <MetaTitle onDark={true}>زیاتر</MetaTitle>
+            <FooterLink to="/tutorial/tutorial.html">فێركاری</FooterLink>
+            <FooterLink to="/blog/">بلۆگ</FooterLink>
             <FooterLink to="/acknowledgements.html">
-              Acknowledgements
+              رێزگرتن
             </FooterLink>
             <ExternalFooterLink
               href="https://facebook.github.io/react-native/"
               target="_blank"
               rel="noopener">
-              React Native
+              ریاكت نه‌یتڤ
             </ExternalFooterLink>
           </FooterNav>
         </div>
         <section
+          dir="ltr"
           css={{
             paddingTop: 40,
             display: 'block !important', // Override 'Installation' <style> specifics
+            paddingLeft: 40,
 
             [media.greaterThan('xlarge')]: {
               width: 'calc(100% / 3)',
@@ -179,7 +182,13 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               color: colors.subtleOnDark,
               paddingTop: 15,
             }}>
-            {`Copyright © ${new Date().getFullYear()} Facebook Inc.`}
+             © 2018 Facebook Inc.{' '}
+            <span
+              css={{
+                display: layoutHasSidebar ? 'none' : 'inline-block',
+              }}>
+              هه‌موو مافێكی پارێزراوه‌
+            </span>
           </p>
         </section>
       </div>
