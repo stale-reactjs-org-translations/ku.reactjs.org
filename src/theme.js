@@ -407,6 +407,10 @@ const sharedStyles = {
           marginTop: 0,
         },
       },
+
+      '& .gatsby-highlight': {
+        marginLeft: 0,
+      },
     },
 
     '& .gatsby-highlight + blockquote': {
