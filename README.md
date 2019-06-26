@@ -39,10 +39,18 @@ git clone https://github.com/reactjs/ku.reactjs.org.git
 
 <div dir="ltr">
 
+<<<<<<< HEAD
 ```
 cd ku.reactjs.org
 ```
 </div>
+=======
+1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fix header logo on Android`) to stage and commit your changes
+1. `git push my-fork-name the-name-of-my-branch`
+1. Go to the [reactjs.org repo](https://github.com/reactjs/reactjs.org) and you should see recently pushed branches.
+1. Follow GitHub's instructions.
+1. If possible, include screenshots of visual changes. A Netlify build will also be automatically created once you make your PR so other people can see your change.
+>>>>>>> cb5a61cdbfa5e72646cfb954056c6a4fde490a8c
 
 ```
 # په‌یوه‌ستییه‌كانی npm داببه‌زێنه‌
