@@ -88,10 +88,14 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               ستاك ئۆڤه‌رفلۆ
             </ExternalFooterLink>
             <ExternalFooterLink
-              href="https://discuss.reactjs.org"
+              href="https://reactjs.org/community/support.html#popular-discussion-forums"
               target="_blank"
               rel="noopener">
+<<<<<<< HEAD
               مه‌كۆی گفتوگۆ
+=======
+              Discussion Forums
+>>>>>>> 519a3aec91a426b0c8c9ae59e292d064df48c66a
             </ExternalFooterLink>
             <ExternalFooterLink
               href="https://discord.gg/0ZcbPKXt5bZjGY5n"
