@@ -14,6 +14,9 @@ import {version} from 'site-constants';
 import ExternalLinkSvg from 'templates/components/ExternalLinkSvg';
 import DocSearch from './DocSearch';
 
+// $FlowFixMe
+import navHeader from '../../../content/headerNav.yml';
+
 import logoSvg from 'icons/logo.svg';
 
 const Header = ({location}: {location: Location}) => (
@@ -121,6 +124,7 @@ const Header = ({location}: {location: Location}) => (
                 'linear-gradient(to right, transparent, black 20px, black 90%, transparent)',
             },
           }}>
+<<<<<<< HEAD
           <HeaderLink
             isActive={location.pathname.includes('/docs/')}
             title="دۆكس"
@@ -141,6 +145,16 @@ const Header = ({location}: {location: Location}) => (
             title="مه‌كۆ"
             to="/community/support.html"
           />
+=======
+          {navHeader.items.map(link => (
+            <HeaderLink
+              key={link.title}
+              isActive={location.pathname.includes(link.activeSelector)}
+              title={link.title}
+              to={link.to}
+            />
+          ))}
+>>>>>>> 8edfc7ce78cbf5b6024ab5f891f0eee69c792d1f
         </nav>
 
         <DocSearch />
