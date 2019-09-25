@@ -7,7 +7,6 @@ next: forms.html
 ---
 
 یەکەم جار، با پێداچوونەوە بکەین لەسەر گۆڕانکاری کردنی لیستەکان لە جاڤاسکریپتدا.
-
  
  
   سەیرێکی ئەم کۆدەی خوارەوەبکە، فەکشنی  [`()map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) 
@@ -24,7 +23,9 @@ console.log(doubled);
 
 ئەم کۆدە ئەمە لۆگ دەکات   `[2, 4, 6, 8, 10]`   لە کۆنسڵ.
 
+
 لە ڕیاکتدا ، گواستنەوەی ئەڕەیەکان بۆ کۆمەڵە لیستێک لە [ئیلیمێنتەکان ](/docs/rendering-elements.html) بە نزیکەی باسی لێوە کرا.
+
 
 ### ڕێندەرکردنی زیاد لەیەک کۆمپۆنێنت{#rendering-multiple-components}
 
