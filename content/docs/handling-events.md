@@ -57,10 +57,14 @@ function ActionLink() {
 
 لێره‌دا، `e` رووداوێكی دروستكراوه‌. ریاكت ئه‌م رووداوه‌ دروستكراوانه‌ به‌ پێی [W3C spec](https://www.w3.org/TR/DOM-Level-3-Events/) پێناسه‌ ده‌كات. هه‌ربۆیه‌، پێویست ناكات خه‌می كێشه‌ی سازان له‌گه‌ڵ گه‌ڕۆكی جیاوازدا، بخۆی. سه‌یری رێبه‌ری سه‌رچاوه‌ی [`SyntheticEvent`](/docs/events.html) بكه بۆ زانیاری زیاتر.
 
+<<<<<<< HEAD
 له‌كاتی به‌كارهێنانی ریاكتدا، به‌ شێوه‌یه‌كی گشتی پێویستت به‌وه‌ نابێت كه‌ بانگی `addEventListener` بكه‌یت بۆ زیادكردنی گوێگر بۆ یه‌كه‌یه‌كی دۆم پاش دروستكردنی. له‌ جیاتی ئه‌وه‌، ته‌نها له‌ كاتی رێنده‌ری سه‌ره‌تایی یه‌كه‌كه‌، گوێگرێگی بۆ دابینبكه‌. 
 
 
 كاتێك پێناسه‌ی كۆمپۆنێنتێك ده‌كه‌یت له‌ رێگه‌ی پۆلی [ES6] (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)، پاتێرنێكی هاوبه‌ش هه‌یه‌ بۆ مامه‌ڵه‌كه‌رێكی روداو بۆ وه‌وه‌ی ببێته‌ مێسۆدێك بۆ پۆله‌كه‌. بۆ نموونه‌، ئه‌م زامنه‌ `Toggle`، رێنده‌ری دوگمه‌یه‌ك ده‌كات كه‌ ڕێگه‌ به‌ به‌كارهێنه‌ر ده‌دات هه‌ڵبژارده‌ی "ON" یاخود "OFF" هه‌ڵبژێرێت:
+=======
+When using React, you generally don't need to call `addEventListener` to add listeners to a DOM element after it is created. Instead, just provide a listener when the element is initially rendered.
+>>>>>>> 99a18287c163e328f87709cb224742ccac3e113a
 
 
 ```js{6,7,10-14,18}
@@ -152,7 +156,11 @@ class LoggingButton extends React.Component {
 
 ## تێپه‌ڕاندنی ئارگیومێنت بۆ مامه‌ڵه‌كه‌ری رووداوه‌كان Event Handlers  {#passing-arguments-to-event-handlers}
 
+<<<<<<< HEAD
 له‌ ناو ئه‌ڵقه‌یه‌كدا loop، تێپه‌ڕاندنی پارامیته‌رێكی زیاده‌ بۆ مامه‌ڵه‌كه‌ری رووداو، شتێكی باوه‌. بۆ نموونه‌، ئه‌گه‌ر `id` بنواڕه‌ی ریزێك بێت، هه‌ریه‌ك له‌مانه‌ی خواره‌وه‌ ده‌توانرێت به‌كاربێت:
+=======
+Inside a loop, it is common to want to pass an extra parameter to an event handler. For example, if `id` is the row ID, either of the following would work:
+>>>>>>> 99a18287c163e328f87709cb224742ccac3e113a
 
 ```js
 <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
