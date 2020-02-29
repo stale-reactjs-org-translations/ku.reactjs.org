@@ -21,7 +21,7 @@ import logoSvg from 'icons/logo.svg';
 
 const Header = ({location}: {location: Location}) => (
   <header
-  dir="rtl"
+    dir="rtl"
     css={{
       backgroundColor: colors.darker,
       color: colors.white,
@@ -127,7 +127,6 @@ const Header = ({location}: {location: Location}) => (
                 'linear-gradient(to right, transparent, black 20px, black 90%, transparent)',
             },
           }}>
-<<<<<<< HEAD
           <HeaderLink
             isActive={location.pathname.includes('/docs/')}
             title="دۆكس"
@@ -148,7 +147,6 @@ const Header = ({location}: {location: Location}) => (
             title="مه‌كۆ"
             to="/community/support.html"
           />
-=======
           {navHeader.items.map(link => (
             <HeaderLink
               key={link.title}
@@ -157,7 +155,6 @@ const Header = ({location}: {location: Location}) => (
               to={link.to}
             />
           ))}
->>>>>>> 8edfc7ce78cbf5b6024ab5f891f0eee69c792d1f
         </nav>
 
         <DocSearch />
@@ -240,8 +237,6 @@ const Header = ({location}: {location: Location}) => (
               Languages
             </span>
           </Link>
-          
-          
         </div>
       </div>
     </Container>

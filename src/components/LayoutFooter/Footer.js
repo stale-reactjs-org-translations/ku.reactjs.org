@@ -22,7 +22,7 @@ import ossLogoPng from 'images/oss_logo.png';
 
 const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
   <footer
-  dir="rtl"
+    dir="rtl"
     css={{
       backgroundColor: colors.darker,
       color: colors.white,
@@ -148,9 +148,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             <MetaTitle onDark={true}>زیاتر</MetaTitle>
             <FooterLink to="/tutorial/tutorial.html">فێركاری</FooterLink>
             <FooterLink to="/blog/">بلۆگ</FooterLink>
-            <FooterLink to="/acknowledgements.html">
-              رێزگرتن
-            </FooterLink>
+            <FooterLink to="/acknowledgements.html">رێزگرتن</FooterLink>
             <ExternalFooterLink
               href="https://facebook.github.io/react-native/"
               target="_blank"
@@ -200,7 +198,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               color: colors.subtleOnDark,
               paddingTop: 15,
             }}>
-             © 2018 Facebook Inc.{' '}
+            © 2018 Facebook Inc.{' '}
             <span
               css={{
                 display: layoutHasSidebar ? 'none' : 'inline-block',

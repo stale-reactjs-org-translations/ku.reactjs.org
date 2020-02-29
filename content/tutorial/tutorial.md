@@ -1,6 +1,6 @@
 ---
 id: tutorial
-title: "Tutorial: Intro to React"
+title: "فێرکاری:‌ دەسپێکێک بە ڕیاکت"
 layout: tutorial
 sectionid: tutorial
 permalink: tutorial/tutorial.html
@@ -12,24 +12,24 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
-This tutorial doesn't assume any existing React knowledge.
+ئەو فێرکاریە وا دەڕوانێت کە خوێنەر هیچ زانستێکی سەبارەت بە ڕیاکت نیە.
 
-## Before We Start the Tutorial {#before-we-start-the-tutorial}
+## پێش ئەوەی دەست بە "فێرکاریەکە" بکەین {#before-we-start-the-tutorial}
 
-We will build a small game during this tutorial. **You might be tempted to skip it because you're not building games -- but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building any React app, and mastering it will give you a deep understanding of React.
+لە ماوەی ئەو فێرکاریەدا، یارییەک ساز دەکەین. **لەوانەیە تەمات ڕێکەوێت کە تێیپەڕێنی چۆن تۆ قەت یاری ساز ناکەی -- بەڵام بەردەوام بە** ئەو تکنیکانەی بە درێژایی ئەو فێرکاریە دێنە دەستت، بۆ سازکردنی هەموو جۆرە ئاپێکی ڕیاکتی سەرەکین. و وەستابوون تێیدا تێگەیشتنێکی قووڵت سەبارەت بە ڕیاکت دەداتێ.
 
->Tip
+>خاڵ
 >
->This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
+>ئەو فێرکاریە بۆ ئەو کەسانە پێکهاتوە کە **فێربوون بە کردنیان** پێ خۆشترە. ئەگەر پێت خۆشترە لە سەرەتاڕا فێری بیرە سەرەکیەکان بی، بەجیاتان [ڕێنوێنی هەنگاو-بە-هەنگاو](/docs/hello-world.html) بخوێنەوە. شایەد واتێبگەیت کە "فێرکاری" و "ڕێنوێنی" کامل‌کەرەوەی یەکترن.
 
-The tutorial is divided into several sections:
+ئەو فێرکاریە بەو بەشانەی خوارەوە دابەشدەکرێت:
 
-* [Setup for the Tutorial](#setup-for-the-tutorial) will give you **a starting point** to follow the tutorial.
-* [Overview](#overview) will teach you **the fundamentals** of React: components, props, and state.
-* [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
-* [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
+* [ڕێکخستن بۆ ئەو فێرکاریە](#setup-for-the-tutorial) بۆ دوا کەوتنی فێرکاریەکە پێویستە ئەو خاڵە سەرەکیە تێپەرکەین.
+* [هەڵسەنگاندی گشتی](#overview) **بیرۆکە سەرەکیەکانی** ڕیاکت‌تان فێر دەکەین:‌ کامپۆنەنت، پراپ و ستەیست.
+* [کامل‌کردنی یارییەکە](#completing-the-game) **باوترین تکنیکەکانی** لە پەرەپێدانی ڕیاکت‌تان فێر دەکەین.
+* [زۆرکردنی سەفەر لە زەمان](#adding-time-travel) **تێڕوانینێکی قوولتر**‌ سەبارەت بە تواناییەکانی ڕیاکت‌تان پێ دەدەین.
 
-You don't have to complete all of the sections at once to get the value out of this tutorial. Try to get as far as you can -- even if it's one or two sections.
+پێویست نیە تا هەموو بەشەکان بەسەرێکەوە بخوێنن تاکوو زۆرترین کەڵک لە فێرکاریەکە وەربگرن. تا ئەو جێگایەی توانیتان تێبکۆشن -- تەنانەت ئەگەر یەک یان دو بەشیش بێت.
 
 ### What Are We Building? {#what-are-we-building}
 
