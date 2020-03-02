@@ -82,6 +82,10 @@ const element = <h1>سڵاو, جیهان</h1>;
 
 ![DOM inspector showing granular updates](../images/docs/granular-dom-updates.gif)
 
+<<<<<<< HEAD
+=======
+Even though we create an element describing the whole UI tree on every tick, only the text node whose contents have changed gets updated by React DOM.
+>>>>>>> 2ab1ca5007a37ca509863a212293f1c6b26d0afc
 
 هەرچەنە ئێمە پێکهاتەیەک دروست دەکەین کە باسی هەموو یوو ئای لەسەر هەموو چکە
 تەنها ئەو نوسینانەی دۆم کە  بناغەیان گۆڕابێ لەلایەن ڕییاکت دۆم ئەپدەیت 
