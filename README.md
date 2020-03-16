@@ -27,9 +27,17 @@
 
 <div dir="ltr">
 
+<<<<<<< HEAD
 ```
 git clone https://github.com/reactjs/ku.reactjs.org.git
 ```
+=======
+1. Follow the ["Running locally"](#running-locally) instructions
+1. Save the files and check in the browser
+  1. Changes to React components in `src` will hot-reload
+  1. Changes to markdown files in `content` will hot-reload
+  1. If working with plugins, you may need to remove the `.cache` directory and restart the server
+>>>>>>> 2ef0ee1e4fc4ce620dce1f3e0530471195dc64d1
 
 </div>
 

@@ -231,16 +231,24 @@ const element = {
 
 These objects are called "React elements". You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
 
+<<<<<<< HEAD
 ئەم تەنانە پێیان دەوترێت "ڕەگەزەکانی ڕیئاکت" (React elements). دەتوانیت وەکوو وەسفێک بۆ ئەوەی دەتەوێت لەسەر شاشەکەت بیبینی بیریان لێ بکەیتەوە. ڕیئاکت ئەو تەنانە دەخوێنێتەوە و بەکاریان دەهێنێت بۆ درووستکردنی DOM و نوێکردنەوەی.
 
 We will explore rendering React elements to the DOM in the next section.
+=======
+We will explore rendering React elements to the DOM in the [next section](/docs/rendering-elements.html).
+>>>>>>> 2ef0ee1e4fc4ce620dce1f3e0530471195dc64d1
 
 لەبەشی دەهاتوودا باس لە پووختەکردنی ڕەگەزەکانی ڕیئاکت دەکەیت بۆ ناو DOM.
 
 >**Tip:**
 >
+<<<<<<< HEAD
 >We recommend using the ["Babel" language definition](https://babeljs.io/docs/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted. This website uses the [Oceanic Next](https://labs.voronianski.com/oceanic-next-color-scheme/) color scheme which is compatible with it.
 
 >**ڕێنمایی:**
 >
 >ئێمە پێشنیار دەکەین کە ["Babel" زمانی پێناسەکردن](https://babeljs.io/docs/editors) بەکاربهێنیت بۆ ئەو دەستکاریکەرەی بەکاری دەهێنیت تاوەکوو هەردووک ES6 و JSX بە شیاویی دەربکەون. ئەم ماڵپەرە ڕەنگەکانی[Oceanic Next](https://labs.voronianski.com/oceanic-next-color-scheme/) بەکاردەهێنێت کە گوونجاوە لەگەڵی.
+=======
+>We recommend using the ["Babel" language definition](https://babeljs.io/docs/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted.
+>>>>>>> 2ef0ee1e4fc4ce620dce1f3e0530471195dc64d1
