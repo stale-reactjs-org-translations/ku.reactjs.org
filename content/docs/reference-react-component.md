@@ -501,7 +501,7 @@ UNSAFE_componentWillUpdate(nextProps, nextState)
 ### `setState()` {#setstate}
 
 ```javascript
-setState(updater[, callback])
+setState(updater, [callback])
 ```
 
 `setState()` گۆڕانکارییەکان بە ڕیز زیاد دەکات بۆ ستەت کۆمپۆنێنتەکە وە بە ڕیاکت دەڵێت کە ئەم کۆمپۆنێنتە و چایەڵدەکانی پێویستان بە ڕی-ڕێندەرکردن هەیە لەگەڵ ئەپدەیت کردنی ستەت. ئەمە میسۆدی بنچینەییە بۆ تازەکردنەوەی یوزەر ئینتەرفەیس لەبەرامبەر ئیڤێنت هەڵگرەکان و وەڵام دانەوەی سێرڤەرەکان.
