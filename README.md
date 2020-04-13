@@ -4,7 +4,15 @@
 
 # وه‌شانی کوردی reactjs.org
 
+<<<<<<< HEAD
 ئه‌م رێپۆیه‌ به‌ ئامانجی وه‌رگێڕانی دۆکیومنته‌یشنی ریاکت  (react)بۆ زمانی کوردی له‌ reactjs/reactjs.org فۆرک کراوه‌.
+=======
+1. Git
+1. Node: any 12.x version starting with v12.0.0 or greater
+1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
+1. A fork of the repo (for any contributions)
+1. A clone of the [reactjs.org repo](https://github.com/reactjs/reactjs.org) on your local machine
+>>>>>>> b3c7f041586b71b31f556403426fcd7cab342535
 
 به‌ره‌وپێشچوونه‌کانمان له‌ رێگه‌ی ئه‌م ماڵپه‌ڕه‌وه‌ ببینه‌: https://isreacttranslatedyet.com
 
@@ -27,9 +35,17 @@
 
 <div dir="ltr">
 
+<<<<<<< HEAD
 ```
 git clone https://github.com/reactjs/ku.reactjs.org.git
 ```
+=======
+1. Follow the ["Running locally"](#running-locally) instructions
+1. Save the files and check in the browser
+  1. Changes to React components in `src` will hot-reload
+  1. Changes to markdown files in `content` will hot-reload
+  1. If working with plugins, you may need to remove the `.cache` directory and restart the server
+>>>>>>> b3c7f041586b71b31f556403426fcd7cab342535
 
 </div>
 
