@@ -53,7 +53,15 @@ class Home extends Component {
           title="React &ndash; A JavaScript library for building user interfaces"
           canonicalUrl={createCanonicalUrl('/')}
         />
+<<<<<<< HEAD
         <div dir="rtl" css={{width: '100%'}}>
+=======
+        <div
+          css={{
+            width: '100%',
+            marginTop: 60, // BLM
+          }}>
+>>>>>>> 1913f358fcf4f8a6a602ddb8797f110b11901814
           <header
             css={{
               backgroundColor: colors.dark,
