@@ -274,7 +274,11 @@ shouldComponentUpdate(nextProps, nextState)
 static getDerivedStateFromProps(props, state)
 ```
 
+<<<<<<< HEAD
 `getDerivedStateFromProps` بانگ دەکرێت پێش بانگ کردنی ڕێندەر میسۆد, هەردووکیان لە سەرەتای ماونتد و لە بەشە ئەپدەیتەکان. پێویست دەکات ئۆبجێکتێک بگەڕێنێتەوە بۆ ئەپدەیت کردنەوەی ستەت,  یان نەڵ بۆ ئەپدەیت کردنەوەی هیچ شتێک.
+=======
+`getDerivedStateFromProps` is invoked right before calling the render method, both on the initial mount and on subsequent updates. It should return an object to update the state, or `null` to update nothing.
+>>>>>>> 954a16f1d358009505ae881afaefe463dc6388a5
 
 ئەم میسۆدە بوونی هەیە [بۆ دۆخە کەم بەکار هاتووەکان ](/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state) لە شوێنێکدا کە ستەت پشت بەستووبێت بەو گۆڕانکاریانەی ڕوودەدەن لە پڕۆپس بە پێی کات. بۆ نموونە , لەوانەیە بەردەست بێت لکاندنی  `<Transition>` کۆمپۆنێنت بۆ بەراورد کردنی چیڵدرنی پێشووی لەگەڵ داهاتووی بۆ ئەوەی بڕیار بدات کامیان کارابێت.
 
@@ -501,7 +505,7 @@ UNSAFE_componentWillUpdate(nextProps, nextState)
 ### `setState()` {#setstate}
 
 ```javascript
-setState(updater[, callback])
+setState(updater, [callback])
 ```
 
 `setState()` گۆڕانکارییەکان بە ڕیز زیاد دەکات بۆ ستەت کۆمپۆنێنتەکە وە بە ڕیاکت دەڵێت کە ئەم کۆمپۆنێنتە و چایەڵدەکانی پێویستان بە ڕی-ڕێندەرکردن هەیە لەگەڵ ئەپدەیت کردنی ستەت. ئەمە میسۆدی بنچینەییە بۆ تازەکردنەوەی یوزەر ئینتەرفەیس لەبەرامبەر ئیڤێنت هەڵگرەکان و وەڵام دانەوەی سێرڤەرەکان.
@@ -587,7 +591,11 @@ component.forceUpdate(callback)
 
 ### `defaultProps` {#defaultprops}
 
+<<<<<<< HEAD
 `defaultProps` دەتوانرێت بناسێنرێنرێت وەکو تایبەتمەندییەکی کڵاس کۆمپۆنێنت, بۆ دانانی  default props بۆ کڵاس. ئەمە بەکاردێت بۆ پڕۆپس ە نەناسێنراوەکەن, بەڵام نەک بۆ پڕۆپسە  null ە نەڵە کان. بۆ نموونە:
+=======
+`defaultProps` can be defined as a property on the component class itself, to set the default props for the class. This is used for `undefined` props, but not for `null` props. For example:
+>>>>>>> 954a16f1d358009505ae881afaefe463dc6388a5
 
 ```js
 class CustomButton extends React.Component {
@@ -607,7 +615,11 @@ CustomButton.defaultProps = {
   }
 ```
 
+<<<<<<< HEAD
 ئەگەر  `props.color` نرخەکەی  null بوو, هەربە null ی دەمێنێتەوە:
+=======
+If `props.color` is set to `null`, it will remain `null`:
+>>>>>>> 954a16f1d358009505ae881afaefe463dc6388a5
 
 ```js
   render() {
