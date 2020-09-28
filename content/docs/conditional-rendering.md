@@ -120,7 +120,11 @@ ReactDOM.render(
 
 ### If ی ئینڵاین و Logical && Operator
 
+<<<<<<< HEAD
 ده‌توانیت هه‌ر [ئێكسپرێشنێك بخه‌یته‌ ناو JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) له‌ ڕێگه‌ی خستنییه‌ ناو كه‌وانه‌وه‌. ده‌توانیت ئۆپێره‌یته‌ری `&&` ش به‌كاربهێنیت. ده‌كرێت ئه‌مه‌ سوودێكی زۆری هه‌بێت بۆ به‌كارهێنانی ئیلیمێنتێك به‌ پشت به‌ستن به‌ حاڵه‌تێك.‌
+=======
+You may [embed expressions in JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
+>>>>>>> 32e3c7a6f92cb6580eb38c047960805d5998c2ec
 
 ```js{6-10}
 function Mailbox(props) {
@@ -174,11 +178,10 @@ render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
     <div>
-      {isLoggedIn ? (
-        <LogoutButton onClick={this.handleLogoutClick} />
-      ) : (
-        <LoginButton onClick={this.handleLoginClick} />
-      )}
+      {isLoggedIn
+        ? <LogoutButton onClick={this.handleLogoutClick} />
+        : <LoginButton onClick={this.handleLoginClick} />
+      }
     </div>
   );
 }
