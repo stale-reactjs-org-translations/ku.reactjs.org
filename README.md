@@ -4,7 +4,15 @@
 
 # وه‌شانی کوردی reactjs.org
 
+<<<<<<< HEAD
 ئه‌م رێپۆیه‌ به‌ ئامانجی وه‌رگێڕانی دۆکیومنته‌یشنی ریاکت  (react)بۆ زمانی کوردی له‌ reactjs/reactjs.org فۆرک کراوه‌.
+=======
+1. Git
+1. Node: any 12.x version starting with v12.0.0 or greater
+1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
+1. A fork of the repo (for any contributions)
+1. A clone of the [reactjs.org repo](https://github.com/reactjs/reactjs.org) on your local machine
+>>>>>>> 68e4efcf93b6e589355f6aa3cbc3f3c811c0ad37
 
 به‌ره‌وپێشچوونه‌کانمان له‌ رێگه‌ی ئه‌م ماڵپه‌ڕه‌وه‌ ببینه‌: https://isreacttranslatedyet.com
 
@@ -27,9 +35,17 @@
 
 <div dir="ltr">
 
+<<<<<<< HEAD
 ```
 git clone https://github.com/reactjs/ku.reactjs.org.git
 ```
+=======
+1. Follow the ["Running locally"](#running-locally) instructions
+1. Save the files and check in the browser
+  1. Changes to React components in `src` will hot-reload
+  1. Changes to markdown files in `content` will hot-reload
+  1. If working with plugins, you may need to remove the `.cache` directory and restart the server
+>>>>>>> 68e4efcf93b6e589355f6aa3cbc3f3c811c0ad37
 
 </div>
 
@@ -43,6 +59,7 @@ git clone https://github.com/reactjs/ku.reactjs.org.git
 1. `git push my-fork-name the-name-of-my-branch`
 1. Go to the [reactjs.org repo](https://github.com/reactjs/reactjs.org) and you should see recently pushed branches.
 1. Follow GitHub's instructions.
+<<<<<<< HEAD
 1. If possible, include screenshots of visual changes. A Netlify build will also be automatically created once you make your PR so other people can see your change.
 ```
 # په‌یوه‌ستییه‌كانی npm داببه‌زێنه‌
@@ -50,6 +67,9 @@ Yarn
 ```
  
 ### جێبه‌جێكردن
+=======
+1. If possible, include screenshots of visual changes. A [Netlify](https://www.netlify.com/) build will also be automatically created once you make your PR so other people can see your change.
+>>>>>>> 68e4efcf93b6e589355f6aa3cbc3f3c811c0ad37
 
 ```
 #  بۆ ده‌ستپێكردنی سێرڤه‌ری خۆكار كه‌ له‌ Gatsby وه‌رگیراوه‌
