@@ -195,8 +195,7 @@ function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) =>
     // Correct! Key should be specified inside the array.
-    <ListItem key={number.toString()}
-              value={number} />
+    <ListItem key={number.toString()} value={number} />
   );
   return (
     <ul>
@@ -218,7 +217,11 @@ ReactDOM.render(
 
 ### پێویستە کییەکان بێ وێنەبن (دووبارە نەبنەوە)  لەنێوان کییەکانی تر {#keys-must-only-be-unique-among-siblings}
 
+<<<<<<< HEAD
 ئەو کییانەی بەکاردێن لەگەڵ ئەڕەیەکدا پێویستە بێ وێنەبن، بەڵام پێویست ناکات بەشێوەیەکی گشتی بێ وێنەبن، واتا دەتوانیین کییەکان بەکار بێنینەوە لە ئەڕەیەکی تردا.
+=======
+Keys used within arrays should be unique among their siblings. However, they don't need to be globally unique. We can use the same keys when we produce two different arrays:
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ```js{2,5,11,12,19,21}
 function Blog(props) {

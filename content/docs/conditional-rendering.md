@@ -120,7 +120,11 @@ ReactDOM.render(
 
 ### If ی ئینڵاین و Logical && Operator
 
+<<<<<<< HEAD
 ده‌توانیت هه‌ر [ئێكسپرێشنێك بخه‌یته‌ ناو JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) له‌ ڕێگه‌ی خستنییه‌ ناو كه‌وانه‌وه‌. ده‌توانیت ئۆپێره‌یته‌ری `&&` ش به‌كاربهێنیت. ده‌كرێت ئه‌مه‌ سوودێكی زۆری هه‌بێت بۆ به‌كارهێنانی ئیلیمێنتێك به‌ پشت به‌ستن به‌ حاڵه‌تێك.‌
+=======
+You may [embed expressions in JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ```js{6-10}
 function Mailbox(props) {
@@ -150,6 +154,19 @@ ReactDOM.render(
 
 له‌به‌رئه‌وه‌، ئه‌گه‌ر كۆندیشنه‌كه‌ `true` بێت، ئه‌و ئیلیمێنته‌ی ڕاسته‌وخۆ دوای `&&` دێت، پیشان ده‌درێت. به‌ڵام ئه‌گه‌ر `false` بوو، ڕیاكت تێپه‌ڕی ده‌كات و هیچ ناگۆڕێت
 
+Note that returning a falsy expression will still cause the element after `&&` to be skipped but will return the falsy expression. In the example below, `<div>0</div>` will be returned by the render method.
+
+```javascript{2,5}
+render() {
+  const count = 0;
+  return (
+    <div>
+      { count && <h1>Messages: {count}</h1>}
+    </div>
+  );
+}
+```
+
 ### Inline If-Else with Conditional Operator {#inline-if-else-with-conditional-operator}
 
 Another method for conditionally rendering elements inline is to use the JavaScript conditional operator [`condition ? true : false`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator).
@@ -174,11 +191,10 @@ render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
     <div>
-      {isLoggedIn ? (
-        <LogoutButton onClick={this.handleLogoutClick} />
-      ) : (
-        <LoginButton onClick={this.handleLoginClick} />
-      )}
+      {isLoggedIn
+        ? <LogoutButton onClick={this.handleLogoutClick} />
+        : <LoginButton onClick={this.handleLoginClick} />
+      }
     </div>
   );
 }
