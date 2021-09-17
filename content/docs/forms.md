@@ -9,7 +9,7 @@ redirect_from:
   - "docs/forms-zh-CN.html"
 ---
 
-HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
+HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
 
 ```html
 <form>
@@ -31,7 +31,7 @@ We can combine the two by making the React state be the "single source of truth"
 
 For example, if we want to make the previous example log the name when it is submitted, we can write the form as a controlled component:
 
-```javascript{4,10-12,24}
+```javascript{4,10-12,21,24}
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
@@ -68,13 +68,7 @@ class NameForm extends React.Component {
 
 Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
 
-With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input. For example, if we wanted to enforce that names are written with all uppercase letters, we could write `handleChange` as:
-
-```javascript{2}
-handleChange(event) {
-  this.setState({value: event.target.value.toUpperCase()});
-}
-```
+With a controlled component, the input's value is always driven by the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.
 
 ## The textarea Tag {#the-textarea-tag}
 
