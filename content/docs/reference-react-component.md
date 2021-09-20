@@ -39,7 +39,11 @@ class Welcome extends React.Component {
 
 ### سوڕی ژیانی کۆمپۆنێنتێک{#the-component-lifecycle}
 
+<<<<<<< HEAD
 هەر کۆمپۆنێنتێک چەند جۆرێک میسۆدی "سووڕی ژیانی" هەیە کە دەتوانی ئۆڤەر ڕادیان بکەیت بۆ ڕەن کردنی کۆدەکەو لە کاتێکی تایبەتدا لە پرۆسێسدا. **، دەتوانی  [ئەم وێنە ڕوونکردنەوەیەی سوڕی ژیانە ](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) بەکار بێنیت  بۆ تێگەیشتن.** لەم لیستەی خوارەوەدا, میسۆدەکانی سوڕی ژیان کە زۆر بەکاردێن  **bold** کراون ئەوانی تریش بوونیا هەیە بۆ دۆخە دەگمەنەکان.
+=======
+Each component has several "lifecycle methods" that you can override to run code at particular times in the process. **You can use [this lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) as a cheat sheet.** In the list below, commonly used lifecycle methods are marked as **bold**. The rest of them exist for relatively rare use cases.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 #### Mounting {#mounting}
 
@@ -109,7 +113,11 @@ class Welcome extends React.Component {
 
 ### میسۆدەکانی سوڕی ژیان زۆر بەکارهاتووەکان {#commonly-used-lifecycle-methods}
 
+<<<<<<< HEAD
 میسۆدەکانی ئەم بەشە باسی زۆربەی بەکارهێنانەکان دەکات کە ڕووبەڕی دەبیتەوە لە دروست کردنی ڕیاکت کۆمپۆنێنت. **بۆ بینینی سەرچاوە سەردانی [ئەم دایەگرامەی سوڕی ژیان ](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) بکە.**
+=======
+The methods in this section cover the vast majority of use cases you'll encounter creating React components. **For a visual reference, check out [this lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).**
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ### `render()` {#render}
 
@@ -245,7 +253,11 @@ componentWillUnmount()
 
 ### میسۆدەکانی سوڕی ژیان کەم بەکارهاتووەکان {#rarely-used-lifecycle-methods}
 
+<<<<<<< HEAD
 میسۆدەکانی ئەم بەشە هاوپێچن بۆ دۆخە کەم بەکارهاتووەکان. بەسوودن یەکجار لە ماوەیەکدا, بەڵام زۆرێک لە کۆمپۆنێنتەکانت لەوانەیە پێویستیان بەوانە نەبێت. **دەتوانی سەیری زۆربەی میسۆدەکانی خوارەوە بکەیت لەسەر  [ئەم دایەگرامەی سوڕی ژیان ](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) ئەگەر کلیک لە چێک بۆکسی "Show less common lifecycles" بکەیت لە بەشی سەرەوە**
+=======
+The methods in this section correspond to uncommon use cases. They're handy once in a while, but most of your components probably don't need any of them. **You can see most of the methods below on [this lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) if you click the "Show less common lifecycles" checkbox at the top of it.**
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 
 ### `shouldComponentUpdate()` {#shouldcomponentupdate}
@@ -274,12 +286,21 @@ shouldComponentUpdate(nextProps, nextState)
 static getDerivedStateFromProps(props, state)
 ```
 
+<<<<<<< HEAD
 `getDerivedStateFromProps` بانگ دەکرێت پێش بانگ کردنی ڕێندەر میسۆد, هەردووکیان لە سەرەتای ماونتد و لە بەشە ئەپدەیتەکان. پێویست دەکات ئۆبجێکتێک بگەڕێنێتەوە بۆ ئەپدەیت کردنەوەی ستەت,  یان نەڵ بۆ ئەپدەیت کردنەوەی هیچ شتێک.
+=======
+`getDerivedStateFromProps` is invoked right before calling the render method, both on the initial mount and on subsequent updates. It should return an object to update the state, or `null` to update nothing.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ئەم میسۆدە بوونی هەیە [بۆ دۆخە کەم بەکار هاتووەکان ](/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state) لە شوێنێکدا کە ستەت پشت بەستووبێت بەو گۆڕانکاریانەی ڕوودەدەن لە پڕۆپس بە پێی کات. بۆ نموونە , لەوانەیە بەردەست بێت لکاندنی  `<Transition>` کۆمپۆنێنت بۆ بەراورد کردنی چیڵدرنی پێشووی لەگەڵ داهاتووی بۆ ئەوەی بڕیار بدات کامیان کارابێت.
 
+<<<<<<< HEAD
 زۆر بەکار هێنانی ستەت دەبێتە هۆی کۆدی زیادە و قوڕس دەبێت بۆ کۆمپۆنێنتەکە جێبەجی بکات.  
 [دڵنیا بەرەوە کە هەڵبژاردە سادەکانی تر دەزانی:](/blog/2018/06/07/you-probably-dont-need-derived-state.html)
+=======
+Deriving state leads to verbose code and makes your components difficult to think about.
+[Make sure you're familiar with simpler alternatives:](/blog/2018/06/07/you-probably-dont-need-derived-state.html)
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 * 	گەر پێویستی کرد  **کاریگەریەکی لاوەکەی ئەنجام بدەیت** (بۆ نموونە , داتا هێنان یان ئەنیمێشنێک) لە بەرامبەر گۆرینی پڕۆپس ,  [`componentDidUpdate`](#componentdidupdate) سوڕی ژیان بەکار بێنە لەجیاتی.
 
@@ -299,7 +320,11 @@ static getDerivedStateFromProps(props, state)
 getSnapshotBeforeUpdate(prevProps, prevState)
 ```
 
+<<<<<<< HEAD
 `getSnapshotBeforeUpdate()` بانگ دەکرێت پێش دواینترین ئاوتپوتی ڕێندەرکراو بۆ نموونە دۆم توانا دەدات بە کۆمپۆنێنتەکەو بۆ وەرگرتنی هەندێ زانیاری لە دۆمەوە (e.g. scroll position) پێش ئەوەی توانای گەشەکردنی بگۆڕدرێت. هەر نرخێک گەڕایەوە لەلایەن ئەم سوڕی ژیانە تێ دەپەڕێت وەکو پارامیتەر بۆ  `componentDidUpdate()`.
+=======
+`getSnapshotBeforeUpdate()` is invoked right before the most recently rendered output is committed to e.g. the DOM. It enables your component to capture some information from the DOM (e.g. scroll position) before it is potentially changed. Any value returned by this lifecycle method will be passed as a parameter to `componentDidUpdate()`.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ئەم بەرکارهێنانە بەربڵاو نییە, ، بەڵام لەوانەیە ڕووبدات لە  UIs وەکو سەکۆی چات کە پێویستی بە گۆڕینی شوێنە بە ڕێگایەکی تایبەت.
 
@@ -323,9 +348,15 @@ error boundaries تەنها بەکاریبێنە بۆ چارەسەکردنی ئ�
 
 بۆ وردبینی , سەیری  [*Error Handling in React 16*](/blog/2017/07/26/error-handling-in-react-16.html).
 
+<<<<<<< HEAD
 > تێبینی
 > 
 > Error boundaries   تەنها ئیرەرە کانی ناو کۆمپۆنێنتەکانی **خوار** ترییەکەیان دەگرن. ئیرەر باوندەریەک ناتوانێ ئیرەر لە ناو خۆی بگرێت.
+=======
+> Note
+>
+> Error boundaries only catch errors in the components **below** them in the tree. An error boundary can’t catch an error within itself.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ### `static getDerivedStateFromError()` {#static-getderivedstatefromerror}
 ```javascript
@@ -353,7 +384,7 @@ class ErrorBoundary extends React.Component {
       return <h1>Something went wrong.</h1>;
     }
 
-    return this.props.children; 
+    return this.props.children;
   }
 }
 ```
@@ -408,15 +439,28 @@ class ErrorBoundary extends React.Component {
       return <h1>Something went wrong.</h1>;
     }
 
-    return this.props.children; 
+    return this.props.children;
   }
 }
 ```
 
+<<<<<<< HEAD
 > تێبینی
 > 
 > لە ئیڤێنتێکدا ئیرەرێک ڕوویدا, دەتوانی ڕێندەری fallback UI بکەیت لەگەڵ  `componentDidCatch()`لە ڕێی بانگکردنی `setState`, بەڵام ئەمە پاڵپشتی ناکرێت لە وەشانی دواتر.
 > `static getDerivedStateFromError()` بەکاربێنە بۆ fallback ڕێندەرکردن.
+=======
+Production and development builds of React slightly differ in the way `componentDidCatch()` handles errors.
+
+On development, the errors will bubble up to `window`, this means that any `window.onerror` or `window.addEventListener('error', callback)` will intercept the errors that have been caught by `componentDidCatch()`.
+
+On production, instead, the errors will not bubble up, which means any ancestor error handler will only receive errors not explicitly caught by `componentDidCatch()`.
+
+> Note
+>
+> In the event of an error, you can render a fallback UI with `componentDidCatch()` by calling `setState`, but this will be deprecated in a future release.
+> Use `static getDerivedStateFromError()` to handle fallback rendering instead.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 * * *
 
@@ -501,7 +545,7 @@ UNSAFE_componentWillUpdate(nextProps, nextState)
 ### `setState()` {#setstate}
 
 ```javascript
-setState(updater[, callback])
+setState(updater, [callback])
 ```
 
 `setState()` گۆڕانکارییەکان بە ڕیز زیاد دەکات بۆ ستەت کۆمپۆنێنتەکە وە بە ڕیاکت دەڵێت کە ئەم کۆمپۆنێنتە و چایەڵدەکانی پێویستان بە ڕی-ڕێندەرکردن هەیە لەگەڵ ئەپدەیت کردنی ستەت. ئەمە میسۆدی بنچینەییە بۆ تازەکردنەوەی یوزەر ئینتەرفەیس لەبەرامبەر ئیڤێنت هەڵگرەکان و وەڵام دانەوەی سێرڤەرەکان.
@@ -587,7 +631,11 @@ component.forceUpdate(callback)
 
 ### `defaultProps` {#defaultprops}
 
+<<<<<<< HEAD
 `defaultProps` دەتوانرێت بناسێنرێنرێت وەکو تایبەتمەندییەکی کڵاس کۆمپۆنێنت, بۆ دانانی  default props بۆ کڵاس. ئەمە بەکاردێت بۆ پڕۆپس ە نەناسێنراوەکەن, بەڵام نەک بۆ پڕۆپسە  null ە نەڵە کان. بۆ نموونە:
+=======
+`defaultProps` can be defined as a property on the component class itself, to set the default props for the class. This is used for `undefined` props, but not for `null` props. For example:
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ```js
 class CustomButton extends React.Component {
@@ -607,7 +655,11 @@ CustomButton.defaultProps = {
   }
 ```
 
+<<<<<<< HEAD
 ئەگەر  `props.color` نرخەکەی  null بوو, هەربە null ی دەمێنێتەوە:
+=======
+If `props.color` is set to `null`, it will remain `null`:
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ```js
   render() {
