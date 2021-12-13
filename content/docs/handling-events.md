@@ -8,7 +8,11 @@ redirect_from:
   - "docs/events-ko-KR.html"
 ---
 
+<<<<<<< HEAD
 مامه‌ڵه‌كردن له‌گه‌ڵ  رووداوه‌كان له‌ڕێی یه‌كه‌كانی رایكته‌وه‌ زۆر له‌ مامه‌ڵه‌كردنی رووداوه‌كان ده‌چیت كه‌ له‌ڕێی یه‌كه‌كانی دۆم-ه‌وه‌ ده‌كرێت. لێره‌دا چه‌ند جیاوازییه‌كی دارسته‌یی (syntax) هه‌یه‌:
+=======
+Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
+>>>>>>> 014f4890dc30a3946c63f83b06883241ddc9bc75
 
 * رووداوه‌كانی ریاكتCamelCase ناوده‌نرێن، نه‌وه‌ك lowercase.
 * به‌هۆی JSX ه‌وه‌، له‌ جیاتی سترینگ، فه‌نكشنێك تێده‌په‌ڕێنی وه‌ك مامه‌ڵه‌كه‌ری رووداوه‌كه‌ (event handler).
@@ -29,38 +33,48 @@ redirect_from:
 </button>
 ```
 
+<<<<<<< HEAD
 جیاوازییه‌كی تر ئه‌وه‌یه‌ كه‌ ناتوانیت `false` بگه‌ڕێنیته‌وه‌ بۆ رێگریكردن له‌ ره‌فتاری بنه‌ڕه‌تی له‌ ریاكتدا.
 پێویسته‌ به‌ جیا `preventDefault` بانگ بكه‌یت. بۆ نموونه‌، له‌ HTML ی روتدا، بۆ رگریكردن له‌ ره‌فتاری بنه‌ڕه‌تی به‌سته‌ری كردنه‌وه‌ی په‌ڕه‌یه‌كی نوێ، ده‌توانیت ئه‌مه‌ بنووسیت:
+=======
+Another difference is that you cannot return `false` to prevent default behavior in React. You must call `preventDefault` explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, you can write:
+>>>>>>> 014f4890dc30a3946c63f83b06883241ddc9bc75
 
 ```html
-<a href="#" onclick="console.log('The link was clicked.'); return false">
-  Click me
-</a>
+<form onsubmit="console.log('You clicked submit.'); return false">
+  <button type="submit">Submit</button>
+</form>
 ```
 
 له‌ ریاكتدا، ده‌كرێت به‌م شێوازه‌ی خواره‌وه‌ بێت:
 
-```js{2-5,8}
-function ActionLink() {
-  function handleClick(e) {
+```js{3}
+function Form() {
+  function handleSubmit(e) {
     e.preventDefault();
-    console.log('The link was clicked.');
+    console.log('You clicked submit.');
   }
 
   return (
-    <a href="#" onClick={handleClick}>
-      Click me
-    </a>
+    <form onSubmit={handleSubmit}>
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 ```
 
+<<<<<<< HEAD
 لێره‌دا، `e` رووداوێكی دروستكراوه‌. ریاكت ئه‌م رووداوه‌ دروستكراوانه‌ به‌ پێی [W3C spec](https://www.w3.org/TR/DOM-Level-3-Events/) پێناسه‌ ده‌كات. هه‌ربۆیه‌، پێویست ناكات خه‌می كێشه‌ی سازان له‌گه‌ڵ گه‌ڕۆكی جیاوازدا، بخۆی. سه‌یری رێبه‌ری سه‌رچاوه‌ی [`SyntheticEvent`](/docs/events.html) بكه بۆ زانیاری زیاتر.
 
 له‌كاتی به‌كارهێنانی ریاكتدا، به‌ شێوه‌یه‌كی گشتی پێویستت به‌وه‌ نابێت كه‌ بانگی `addEventListener` بكه‌یت بۆ زیادكردنی گوێگر بۆ یه‌كه‌یه‌كی دۆم پاش دروستكردنی. له‌ جیاتی ئه‌وه‌، ته‌نها له‌ كاتی رێنده‌ری سه‌ره‌تایی یه‌كه‌كه‌، گوێگرێگی بۆ دابینبكه‌. 
 
 
 كاتێك پێناسه‌ی كۆمپۆنێنتێك ده‌كه‌یت له‌ رێگه‌ی پۆلی [ES6] (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)، پاتێرنێكی هاوبه‌ش هه‌یه‌ بۆ مامه‌ڵه‌كه‌رێكی روداو بۆ وه‌وه‌ی ببێته‌ مێسۆدێك بۆ پۆله‌كه‌. بۆ نموونه‌، ئه‌م زامنه‌ `Toggle`، رێنده‌ری دوگمه‌یه‌ك ده‌كات كه‌ ڕێگه‌ به‌ به‌كارهێنه‌ر ده‌دات هه‌ڵبژارده‌ی "ON" یاخود "OFF" هه‌ڵبژێرێت:
+=======
+Here, `e` is a synthetic event. React defines these synthetic events according to the [W3C spec](https://www.w3.org/TR/DOM-Level-3-Events/), so you don't need to worry about cross-browser compatibility. React events do not work exactly the same as native events. See the [`SyntheticEvent`](/docs/events.html) reference guide to learn more.
+
+When using React, you generally don't need to call `addEventListener` to add listeners to a DOM element after it is created. Instead, just provide a listener when the element is initially rendered.
+>>>>>>> 014f4890dc30a3946c63f83b06883241ddc9bc75
 
 
 ```js{6,7,10-14,18}
@@ -74,8 +88,8 @@ class Toggle extends React.Component {
   }
 
   handleClick() {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
     }));
   }
 
@@ -139,7 +153,7 @@ class LoggingButton extends React.Component {
   render() {
     // This syntax ensures `this` is bound within handleClick
     return (
-      <button onClick={(e) => this.handleClick(e)}>
+      <button onClick={() => this.handleClick()}>
         Click me
       </button>
     );
@@ -150,9 +164,13 @@ class LoggingButton extends React.Component {
 كێشه‌ی ئه‌م رسته‌كاره‌ ئه‌وه‌یه‌ كه‌ هه‌رجارێك `LoggingButton` رێنده‌ر ده‌بێت، كۆڵبه‌كێكی جیاواز دروست ده‌بێت. له‌ زۆربه‌ی كه‌یسه‌كاندا، ئه‌مه‌ كێشه‌ی نییه‌. به‌ڵام، ئه‌گه‌ر ئه‌م كوڵبه‌كه‌ وه‌كوو پرۆپێك تێپه‌ڕێندرێت بۆ كۆمپۆنێنته‌كانی خوار خۆی، ئه‌و كۆمپۆنێنتانه‌ له‌وانه‌ رێنده‌رێكی دووباره‌و زیاده‌ بكه‌ن. به‌ گشتی ئێمه‌ هانی به‌ستنه‌وه‌ له‌ كۆنستراكته‌ر یاخود به‌كارهێنانی رسته‌كار فیڵدی كڵاس ده‌ده‌ین له‌به‌ر دووركه‌وتنه‌وه‌ له‌ كێشه‌ی كارامه‌یی هاوشێوه‌. 
 
 
+<<<<<<< HEAD
 ## تێپه‌ڕاندنی ئارگیومێنت بۆ مامه‌ڵه‌كه‌ری رووداوه‌كان Event Handlers  {#passing-arguments-to-event-handlers}
 
 له‌ ناو ئه‌ڵقه‌یه‌كدا loop، تێپه‌ڕاندنی پارامیته‌رێكی زیاده‌ بۆ مامه‌ڵه‌كه‌ری رووداو، شتێكی باوه‌. بۆ نموونه‌، ئه‌گه‌ر `id` بنواڕه‌ی ریزێك بێت، هه‌ریه‌ك له‌مانه‌ی خواره‌وه‌ ده‌توانرێت به‌كاربێت:
+=======
+Inside a loop, it is common to want to pass an extra parameter to an event handler. For example, if `id` is the row ID, either of the following would work:
+>>>>>>> 014f4890dc30a3946c63f83b06883241ddc9bc75
 
 ```js
 <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
