@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @emails react-core
  */
@@ -53,7 +53,19 @@ class Home extends Component {
           title="React &ndash; A JavaScript library for building user interfaces"
           canonicalUrl={createCanonicalUrl('/')}
         />
+<<<<<<< HEAD
         <div dir="rtl" css={{width: '100%'}}>
+=======
+        <div
+          css={{
+            width: '100%',
+            marginTop: 'var(--banner-height-normal)',
+
+            [media.lessThan('small')]: {
+              marginTop: 'var(--banner-height-small)',
+            },
+          }}>
+>>>>>>> 69bd27a3d558d6633e4f0adc61ecb8bb3d5f2edf
           <header
             css={{
               backgroundColor: colors.dark,
