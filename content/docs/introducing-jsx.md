@@ -51,6 +51,7 @@ In the example below, we declare a variable called `name` and then use it inside
 
 لەم نموونەیەی خوارەوەدا، گۆڕاوێک پێناسە دەکەین بەناوی `name` و پاشان بەکاری دەهێنین لەنێو JSX دا بە پێچانەوەی لەنێو کەوانی لوولدا:
 ```js{1,2}
+<<<<<<< HEAD
 const name = 'ئاسۆ نادری';
 const element = <h1>سڵاو، {name}</h1>;
 
@@ -58,6 +59,10 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
+=======
+const name = 'Josh Perez';
+const element = <h1>Hello, {name}</h1>;
+>>>>>>> 84ad3308338e2bb819f4f24fa8e9dfeeffaa970b
 ```
 
 You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
@@ -82,14 +87,13 @@ const element = (
     Hello, {formatName(user)}!
   </h1>
 );
-
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
 ```
 
+<<<<<<< HEAD
 [لەسەر CodePen تاقی بکەرەوە](codepen://introducing-jsx)
+=======
+**[Try it on CodePen](https://codepen.io/gaearon/pen/PGEjdG?editors=1010)**
+>>>>>>> 84ad3308338e2bb819f4f24fa8e9dfeeffaa970b
 
 We split JSX over multiple lines for readability. While it isn't required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of [automatic semicolon insertion](https://stackoverflow.com/q/2846283).
 
@@ -123,7 +127,7 @@ You may use quotes to specify string literals as attributes:
 دەتوانیت دەق بەکاربهێنیت تاوەکوو دەقەڕیزبەند وەک تایبەتمەندیی دەستنیشان بکەیت
 
 ```js
-const element = <div tabIndex="0"></div>;
+const element = <a href="https://www.reactjs.org"> link </a>;
 ```
 
 You may also use curly braces to embed a JavaScript expression in an attribute:
@@ -231,16 +235,24 @@ const element = {
 
 These objects are called "React elements". You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
 
+<<<<<<< HEAD
 ئەم تەنانە پێیان دەوترێت "ڕەگەزەکانی ڕیئاکت" (React elements). دەتوانیت وەکوو وەسفێک بۆ ئەوەی دەتەوێت لەسەر شاشەکەت بیبینی بیریان لێ بکەیتەوە. ڕیئاکت ئەو تەنانە دەخوێنێتەوە و بەکاریان دەهێنێت بۆ درووستکردنی DOM و نوێکردنەوەی.
 
 We will explore rendering React elements to the DOM in the next section.
+=======
+We will explore rendering React elements to the DOM in the [next section](/docs/rendering-elements.html).
+>>>>>>> 84ad3308338e2bb819f4f24fa8e9dfeeffaa970b
 
 لەبەشی دەهاتوودا باس لە پووختەکردنی ڕەگەزەکانی ڕیئاکت دەکەیت بۆ ناو DOM.
 
 >**Tip:**
 >
+<<<<<<< HEAD
 >We recommend using the ["Babel" language definition](https://babeljs.io/docs/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted. This website uses the [Oceanic Next](https://labs.voronianski.com/oceanic-next-color-scheme/) color scheme which is compatible with it.
 
 >**ڕێنمایی:**
 >
 >ئێمە پێشنیار دەکەین کە ["Babel" زمانی پێناسەکردن](https://babeljs.io/docs/editors) بەکاربهێنیت بۆ ئەو دەستکاریکەرەی بەکاری دەهێنیت تاوەکوو هەردووک ES6 و JSX بە شیاویی دەربکەون. ئەم ماڵپەرە ڕەنگەکانی[Oceanic Next](https://labs.voronianski.com/oceanic-next-color-scheme/) بەکاردەهێنێت کە گوونجاوە لەگەڵی.
+=======
+>We recommend using the ["Babel" language definition](https://babeljs.io/docs/en/next/editors) for your editor of choice so that both ES6 and JSX code is properly highlighted.
+>>>>>>> 84ad3308338e2bb819f4f24fa8e9dfeeffaa970b
