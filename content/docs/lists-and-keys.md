@@ -43,13 +43,14 @@ const listItems = numbers.map((number) =>
 );
 ```
 
+<<<<<<< HEAD
 ئەڕەی `listItems` دەخەینە ناو ئیلیمینتی `<ul>`، پاشان [ڕێندەر دەکرێت لە DOM دا](/docs/rendering-elements.html#rendering-an-element-into-the-dom).
+=======
+Then, we can include the entire `listItems` array inside a `<ul>` element:
+>>>>>>> 84ad3308338e2bb819f4f24fa8e9dfeeffaa970b
 
 ```javascript{2}
-ReactDOM.render(
-  <ul>{listItems}</ul>,
-  document.getElementById('root')
-);
+<ul>{listItems}</ul>
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/GjPyQr?editors=0011)
@@ -74,10 +75,8 @@ function NumberList(props) {
 }
 
 const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<NumberList numbers={numbers} />);
 ```
 
 کاتێک ئەم کۆدە ڕەن دەکەیت، ئاگاداریەک وەردەگریت کە ئەڵێت ئاتیمەکانی لیستەکە پێویستە کیی یان هەبێت.کی تایبەتمەندیەکە کە نرخەکەی پیت یان ژمارەی بێ وێنەیە کاتێک لیست لە ئیلیمێنت دروست دەکەیت پێویستە هەیان بێت.گفتوگۆی لەسەر دەکەین کە بۆچی کی گرنگە لە بەشی داهاتوودا.
@@ -96,12 +95,6 @@ function NumberList(props) {
     <ul>{listItems}</ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/jrXYRR?editors=0011)
@@ -175,12 +168,6 @@ function NumberList(props) {
     </ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 **نموونەی : بەکارهێنانی کی بە شێوەیەکی ڕاست**
@@ -195,8 +182,7 @@ function NumberList(props) {
   const numbers = props.numbers;
   const listItems = numbers.map((number) =>
     // Correct! Key should be specified inside the array.
-    <ListItem key={number.toString()}
-              value={number} />
+    <ListItem key={number.toString()} value={number} />
   );
   return (
     <ul>
@@ -204,12 +190,6 @@ function NumberList(props) {
     </ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/ZXeOGM?editors=0010)
@@ -218,7 +198,11 @@ ReactDOM.render(
 
 ### پێویستە کییەکان بێ وێنەبن (دووبارە نەبنەوە)  لەنێوان کییەکانی تر {#keys-must-only-be-unique-among-siblings}
 
+<<<<<<< HEAD
 ئەو کییانەی بەکاردێن لەگەڵ ئەڕەیەکدا پێویستە بێ وێنەبن، بەڵام پێویست ناکات بەشێوەیەکی گشتی بێ وێنەبن، واتا دەتوانیین کییەکان بەکار بێنینەوە لە ئەڕەیەکی تردا.
+=======
+Keys used within arrays should be unique among their siblings. However, they don't need to be globally unique. We can use the same keys when we produce two different arrays:
+>>>>>>> 84ad3308338e2bb819f4f24fa8e9dfeeffaa970b
 
 ```js{2,5,11,12,19,21}
 function Blog(props) {
@@ -250,10 +234,9 @@ const posts = [
   {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
   {id: 2, title: 'Installation', content: 'You can install React from npm.'}
 ];
-ReactDOM.render(
-  <Blog posts={posts} />,
-  document.getElementById('root')
-);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Blog posts={posts} />);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/NRZYGN?editors=0010)
