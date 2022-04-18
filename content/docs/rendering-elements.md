@@ -35,13 +35,17 @@ const element = <h1>سڵاو, جیهان</h1>;
 .ئێمە پێی دەڵێین("ڕوت" دۆم نۆد)لەبەرئەوەی لەناویدا هەموو شتەکان لە لایەن (ڕییەکت دۆم)بەڕێوە دەچێت
 
 
+<<<<<<< HEAD
 ئەپەکانی بەس بە ڕیاکت دروستکراون تەنها زۆر جار یەک ڕەگی دۆم نۆدیان هەیە.
 ئەگەر تۆ ڕیاکت یەکبەخەی بۆ ناو ئەپێک کە بوونی هەبێ تۆ ئەتوانی چەنێک ڕەگی دۆم نۆدی جیاکراووەت هەبێ بتەوێت
 `ReactDOM.render()` بۆ ڕیندەرکردنی پێکهاتەیەکی ڕیاکت بۆ (ڕووت دۆم نۆد)هەردوکیان تێپەڕدەبن بۆ ڕییەکت دۆم   :
+=======
+To render a React element, first pass the DOM element to [`ReactDOM.createRoot()`](/docs/react-dom-client.html#createroot), then pass the React element to `root.render()`:
+>>>>>>> 07dbd86ca421c262157af673a2584a40fd3b2450
 
 `embed:rendering-elements/render-an-element.js`
 
-[](codepen://rendering-elements/render-an-element)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/ZpvBNJ?editors=1010)**
 
 سڵاو، جیهان" پیشاندەدا لەسەر پەڕەکە"
 ## نویکردنەوەی ئەو پێکهاتەنەی ڕیندەرکراون {#updating-the-rendered-element}
@@ -51,6 +55,10 @@ const element = <h1>سڵاو, جیهان</h1>;
 :یەکجار پێکهاتەیەک درووستبکە، ناتوانی ئەوە منداڵە یان سیفەتە بگۆڕی پێکهاتەیەک وەک چوارچێوەیەکی تاکە لە فیلمێکدا
  دەبینێت لە خاڵێکی دیاریکراوی کات دا(ui) ڕۆڵی 
 
+<<<<<<< HEAD
+=======
+With our knowledge so far, the only way to update the UI is to create a new element, and pass it to `root.render()`.
+>>>>>>> 07dbd86ca421c262157af673a2584a40fd3b2450
 
 
 بریتییە لە دروستکردنی پێکهاتەی نوێ، وە کردنەناو (ui)لەگەڵ ئەو زانیاریانەەی هەمانە ، تاکە ڕێگە بۆ نوێ کردنەوەی 
@@ -59,20 +67,29 @@ const element = <h1>سڵاو, جیهان</h1>;
 :ڕەچاوی نمونەی چکەچک کردنی کاتژمێر
 `embed:rendering-elements/update-rendered-element.js`
 
-[](codepen://rendering-elements/update-rendered-element)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=1010)**
 
+<<<<<<< HEAD
+=======
+It calls [`root.render()`](/docs/react-dom.html#render) every second from a [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
+>>>>>>> 07dbd86ca421c262157af673a2584a40fd3b2450
 
  [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) هەموو چرکەیەک لە `ReactDOM.render()` پێی ئەڵێن 
 >**تێبینی:**
 >
+<<<<<<< HEAD
 > لە بڕگەکانی دواتر فێردەبین چۆن کۆدەکان ئەوها دەستدەکەون خراونەتە ناو .`ReactDOM.render()`لە کرداری(عەمەلی)، زۆربەی بەرنامەکانی رییاکت تەنها یەکجار پێیان دەوترێ
 [ستەیتفول کۆمپۆنێنت](/docs/state-and-lifecycle.html).
+=======
+>In practice, most React apps only call `root.render()` once. In the next sections we will learn how such code gets encapsulated into [stateful components](/docs/state-and-lifecycle.html).
+>>>>>>> 07dbd86ca421c262157af673a2584a40fd3b2450
 >
 >ئێمە پێشنیار دەکەین کە بابەتەکان نەپەڕێنیت چونکە لەسەر یەک بونیاد دەنرێن
 
 ## ڕییاکت تەنها بۆ ئەو نوێکردنەوانەی کە پێویستە {#react-only-updates-whats-necessary}
 
 
+<<<<<<< HEAD
 ڕیاکتی دۆمەکە پێکهاتەکان و مناڵەکانی بەراورد ئەکات بەوانەی پیش خۆی
 تەنها ئەو ئەو ئەبدەیتانە جێبەجەێدەکن 
 کە پێویستن بۆ ئەوەی دۆم بگەیەنە شێوازی خواستراو
@@ -90,3 +107,12 @@ const element = <h1>سڵاو, جیهان</h1>;
 بەپێی ئەزموونی ئێمە، بە بیرکردنەوە لە وەی ئایە یوو ئای چۆن دەرکەوێ لە هەر ساتێکدا 
 وەک لەوەی کە چۆن بیگۆڕین لەگەڵ کاتدا 
 کە پۆلێک لە بەگ (کەموکوڕی) لەناو دەبات
+=======
+You can verify by inspecting the [last example](https://codepen.io/gaearon/pen/gwoJZk?editors=1010) with the browser tools:
+
+![DOM inspector showing granular updates](../images/docs/granular-dom-updates.gif)
+
+Even though we create an element describing the whole UI tree on every tick, only the text node whose contents have changed gets updated by React DOM.
+
+In our experience, thinking about how the UI should look at any given moment, rather than how to change it over time, eliminates a whole class of bugs.
+>>>>>>> 07dbd86ca421c262157af673a2584a40fd3b2450
