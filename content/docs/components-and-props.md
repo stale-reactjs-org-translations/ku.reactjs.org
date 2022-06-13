@@ -44,7 +44,11 @@ class Welcome extends React.Component {
 
 بە نیسبەت ڕیئاکت ئە دوانەی سەرەوە (کلاسەکە و فەنکشنەکە) یەک شتن.
 
+<<<<<<< HEAD
 پۆل/کلاسەکان هەندێ تایبەتمەندی تریان هەیە کە لە [بەشی داهاتوو](/docs/state-and-lifecycle.html) باسیان ئەکەین. بەڵام تا ئەو کاتە کۆمپۆنێنتی فەنکشنی بەکار ئەهێنین چونکە کورتترن.
+=======
+Function and Class components both have some additional features that we will discuss in the [next sections](/docs/state-and-lifecycle.html).
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 
 ## وێنەکردنی کۆمپۆنێنتێک {#rendering-a-component}
 
@@ -60,30 +64,47 @@ const element = <div />;
 const element = <Welcome name="Sara" />;
 ```
 
+<<<<<<< HEAD
 کاتێ ڕیئاکت چاوی بە یەکەیەک ئەکەوێ کە بەکارهێنەر دروستی کردبێ، خاسیەتەکان (ئەتریبویت)ی JSXەکە ئەگوازێتەوە بۆ کۆمپۆنێنتەکە وەک یەک ئۆبجێکت (تەنی جاڤاسکریپت) ئا بەمانە ئەوترێ "پرۆپ".
+=======
+When React sees an element representing a user-defined component, it passes JSX attributes and children to this component as a single object. We call this object "props".
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 
 بۆ نمونە، ئەم کۆدە لەسەر پەڕەکە "سڵاو هێرۆ" وێنا ئەکات:
 
-```js{1,5}
+```js{1,6}
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
+<<<<<<< HEAD
 const element = <Welcome name="Hero" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
 );
+=======
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <Welcome name="Sara" />;
+root.render(element);
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 ```
 
-[](codepen://components-and-props/rendering-a-component)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/YGYmEG?editors=1010)**
 
 کەواتە پوختەی ئەم نمونەیە چی بوو:
 
+<<<<<<< HEAD
 1. بانگی `ReactDOM.render()` ئەکەین بە یەکەی `<Welcome name="Hero" />`.
 2. ڕیئاک بانگی کۆمپۆنێنتی `Welcome` ئەکات بە `{name: 'Hero'}` پرۆپی name.
 3. کۆمپۆنێنتی `Welcome` ئەم تاگە ئەگەڕێنێتەوە `<h1>Hello, Hero</h1>` وەک ئەنجامی کۆتایی.
 4. ڕیئاکت خۆی DOM تازە ئەکاتەوە (تایبەتە بە ڕئیکات) کە ئەم تاگە وابێت `<h1>Hello, Hero</h1>`.
+=======
+1. We call `root.render()` with the `<Welcome name="Sara" />` element.
+2. React calls the `Welcome` component with `{name: 'Sara'}` as the props.
+3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
+4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 
 >**تێبینی:** هەمیشە با کۆمپۆنێنتەکانت بە پیتی گەورە/کەپیتاڵ دەست پێ بکەن.
 >
@@ -110,14 +131,9 @@ function App() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
 ```
 
-[](codepen://components-and-props/composing-components)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/KgQKPr?editors=1010)**
 
 ئاساییە، ئاپی نوێی ڕیئاکت بریتی بێ لە تەنها کۆمپۆنێنتێک بەناوی `App` لە سەری سەرەوە. بەڵام ، ئەگەر ڕیئاکتت تێکەڵکرد لەگەڵ ئاپێکی حازدا، ئەکرێ لە ژێرەوە دەستپێ بکەیت بۆ نمونە لە دوگمەیەک`Button`ەوە دەست پێ بکەیت و هەنگاو هەنگاو تا بگەیتە ئاستی سەرەوەی پلەکانی ئاپەکەت. 
 
@@ -151,7 +167,7 @@ function Comment(props) {
 }
 ```
 
-[](codepen://components-and-props/extracting-components)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/VKQwEo?editors=1010)**
 
 پرۆپسی `author` (ئۆبجێک)، `text` (سترینگ)، و `date` (ڕێکەوت) وەر ئەگرێت، پێناسەی کۆمێنتێکی سەر سایتێکی تۆڕی کۆمەڵایەتی ئەکات.
 
@@ -230,10 +246,14 @@ function Comment(props) {
 }
 ```
 
-[](codepen://components-and-props/extracting-components-continued)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/rrJNJY?editors=1010)**
 
+<<<<<<< HEAD
 دەرهێنانی کۆمپۆنێنت لەوەیە وەک ئیشێکی سەخت بێتە بەرچاوت یەکەمجار، بەڵام کاتێک خەرمانێ کۆمپۆنێنت هەبێ بۆ ئەوەی ئەپێکی گەورەی پێ دروست بکەی دوایی ژیانت ئاسان ئەکات. یاسایەکی گشتی لەپێش چاوت بێ ئەوەیە گەر بەشێکی ڕووکارەکەت چەن جارێک بەکارهاتەوە
 (`Button`, `Panel`, `Avatar`)، یاخوود هەر خۆی بۆخۆی ئاڵۆزە کەمێک (`App`, `FeedStory`, `Comment`)، ئیتر ئەوە کاندیدیکی چاکە ورد بکرێتەوە.
+=======
+Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times (`Button`, `Panel`, `Avatar`), or is complex enough on its own (`App`, `FeedStory`, `Comment`), it is a good candidate to be extracted to a separate component.
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 
 ## پرۆپس نەگۆڕن {#props-are-read-only}
 
