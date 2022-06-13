@@ -35,11 +35,17 @@ function Greeting(props) {
   return <GuestGreeting />;
 }
 
+<<<<<<< HEAD
 ReactDOM.render(
   // تاقیبكه‌ره‌وه‌ بیگۆڕیت بۆ isLoggedIn={true}
   <Greeting isLoggedIn={false} />,
   document.getElementById('root')
 );
+=======
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+// Try changing to isLoggedIn={true}:
+root.render(<Greeting isLoggedIn={false} />);
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011)
@@ -108,10 +114,8 @@ class LoginControl extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <LoginControl />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<LoginControl />);
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)
@@ -120,7 +124,11 @@ ReactDOM.render(
 
 ### If ی ئینڵاین و Logical && Operator
 
+<<<<<<< HEAD
 ده‌توانیت هه‌ر [ئێكسپرێشنێك بخه‌یته‌ ناو JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) له‌ ڕێگه‌ی خستنییه‌ ناو كه‌وانه‌وه‌. ده‌توانیت ئۆپێره‌یته‌ری `&&` ش به‌كاربهێنیت. ده‌كرێت ئه‌مه‌ سوودێكی زۆری هه‌بێت بۆ به‌كارهێنانی ئیلیمێنتێك به‌ پشت به‌ستن به‌ حاڵه‌تێك.‌
+=======
+You may [embed expressions in JSX](/docs/introducing-jsx.html#embedding-expressions-in-jsx) by wrapping them in curly braces. This includes the JavaScript logical `&&` operator. It can be handy for conditionally including an element:
+>>>>>>> 6d965422a4056bac5f93f92735364cb08bcffc6b
 
 ```js{6-10}
 function Mailbox(props) {
@@ -138,10 +146,9 @@ function Mailbox(props) {
 }
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
-ReactDOM.render(
-  <Mailbox unreadMessages={messages} />,
-  document.getElementById('root')
-);
+
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<Mailbox unreadMessages={messages} />);
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/ozJddz?editors=0010)
@@ -149,6 +156,19 @@ ReactDOM.render(
 ئه‌وه‌ی كردمان كارده‌كات له‌به‌رئه‌وه‌ی `true && expression` هه‌میشه‌ ده‌كاته‌ `expression`، هه‌روه‌ها `false && expression` هه‌میشه‌ ده‌كاته‌ `false`.
 
 له‌به‌رئه‌وه‌، ئه‌گه‌ر كۆندیشنه‌كه‌ `true` بێت، ئه‌و ئیلیمێنته‌ی ڕاسته‌وخۆ دوای `&&` دێت، پیشان ده‌درێت. به‌ڵام ئه‌گه‌ر `false` بوو، ڕیاكت تێپه‌ڕی ده‌كات و هیچ ناگۆڕێت
+
+Note that returning a falsy expression will still cause the element after `&&` to be skipped but will return the falsy expression. In the example below, `<div>0</div>` will be returned by the render method.
+
+```javascript{2,5}
+render() {
+  const count = 0;
+  return (
+    <div>
+      {count && <h1>Messages: {count}</h1>}
+    </div>
+  );
+}
+```
 
 ### Inline If-Else with Conditional Operator {#inline-if-else-with-conditional-operator}
 
@@ -174,11 +194,10 @@ render() {
   const isLoggedIn = this.state.isLoggedIn;
   return (
     <div>
-      {isLoggedIn ? (
-        <LogoutButton onClick={this.handleLogoutClick} />
-      ) : (
-        <LoginButton onClick={this.handleLoginClick} />
-      )}
+      {isLoggedIn
+        ? <LogoutButton onClick={this.handleLogoutClick} />
+        : <LoginButton onClick={this.handleLoginClick} />
+      }
     </div>
   );
 }
@@ -230,10 +249,8 @@ class Page extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Page />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<Page />);
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/Xjoqwm?editors=0010)
