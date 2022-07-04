@@ -27,7 +27,7 @@ When diffing two trees, React first compares the two root elements. The behavior
 
 Whenever the root elements have different types, React will tear down the old tree and build the new tree from scratch. Going from `<a>` to `<img>`, or from `<Article>` to `<Comment>`, or from `<Button>` to `<div>` - any of those will lead to a full rebuild.
 
-When tearing down a tree, old DOM nodes are destroyed. Component instances receive `componentWillUnmount()`. When building up a new tree, new DOM nodes are inserted into the DOM. Component instances receive `componentWillMount()` and then `componentDidMount()`. Any state associated with the old tree is lost.
+When tearing down a tree, old DOM nodes are destroyed. Component instances receive `componentWillUnmount()`. When building up a new tree, new DOM nodes are inserted into the DOM. Component instances receive `UNSAFE_componentWillMount()` and then `componentDidMount()`. Any state associated with the old tree is lost.
 
 Any components below the root will also get unmounted and have their state destroyed. For example, when diffing:
 
@@ -42,6 +42,12 @@ Any components below the root will also get unmounted and have their state destr
 ```
 
 This will destroy the old `Counter` and remount a new one.
+
+>Note:
+>
+>These methods are considered legacy and you should [avoid them](/blog/2018/03/27/update-on-async-rendering.html) in new code:
+>
+>- `UNSAFE_componentWillMount()`
 
 ### DOM Elements Of The Same Type {#dom-elements-of-the-same-type}
 
@@ -69,9 +75,16 @@ After handling the DOM node, React then recurses on the children.
 
 ### Component Elements Of The Same Type {#component-elements-of-the-same-type}
 
-When a component updates, the instance stays the same, so that state is maintained across renders. React updates the props of the underlying component instance to match the new element, and calls `componentWillReceiveProps()` and `componentWillUpdate()` on the underlying instance.
+When a component updates, the instance stays the same, so that state is maintained across renders. React updates the props of the underlying component instance to match the new element, and calls `UNSAFE_componentWillReceiveProps()`, `UNSAFE_componentWillUpdate()` and `componentDidUpdate()` on the underlying instance.
 
 Next, the `render()` method is called and the diff algorithm recurses on the previous result and the new result.
+
+>Note:
+>
+>These methods are considered legacy and you should [avoid them](/blog/2018/03/27/update-on-async-rendering.html) in new code:
+>
+>- `UNSAFE_componentWillUpdate()`
+>- `UNSAFE_componentWillReceiveProps()`
 
 ### Recursing On Children {#recursing-on-children}
 
@@ -142,7 +155,7 @@ As a last resort, you can pass an item's index in the array as a key. This can w
 
 Reorders can also cause issues with component state when indexes are used as keys. Component instances are updated and reused based on their key. If the key is an index, moving an item changes it. As a result, component state for things like uncontrolled inputs can get mixed up and updated in unexpected ways.
 
-[Here](codepen://reconciliation/index-used-as-key) is an example of the issues that can be caused by using indexes as keys on CodePen, and [here](codepen://reconciliation/no-index-used-as-key) is an updated version of the same example showing how not using indexes as keys will fix these reordering, sorting, and prepending issues.
+Here is [an example of the issues that can be caused by using indexes as keys](codepen://reconciliation/index-used-as-key) on CodePen, and here is [an updated version of the same example showing how not using indexes as keys will fix these reordering, sorting, and prepending issues](codepen://reconciliation/no-index-used-as-key).
 
 ## Tradeoffs {#tradeoffs}
 

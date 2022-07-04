@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * @emails react-core
  * @flow
@@ -133,7 +133,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark={true}>{navFooter.community.title}</MetaTitle>
             <ExternalFooterLink
-              href={`https://github.com/facebook/react/blob/master/CODE_OF_CONDUCT.md`}>
+              href={`https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md`}>
               Code of Conduct
             </ExternalFooterLink>
             {sectionListCommunity.map(section => (
@@ -159,6 +159,12 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             </ExternalFooterLink>
             <MetaTitle onDark={true}>{navFooter.more.title}</MetaTitle>
             <SectionLinks links={navFooter.more.items} />
+            <ExternalFooterLink href="https://opensource.facebook.com/legal/privacy">
+              Privacy
+            </ExternalFooterLink>
+            <ExternalFooterLink href="https://opensource.facebook.com/legal/terms">
+              Terms
+            </ExternalFooterLink>
           </FooterNav>
         </div>
         <section
@@ -183,7 +189,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
             },
           }}>
           <a
-            href="https://code.facebook.com/projects/"
+            href="https://opensource.facebook.com/projects/"
             target="_blank"
             rel="noopener">
             <img
@@ -200,6 +206,7 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               color: colors.subtleOnDark,
               paddingTop: 15,
             }}>
+<<<<<<< HEAD
              © 2018 Facebook Inc.{' '}
             <span
               css={{
@@ -207,6 +214,9 @@ const Footer = ({layoutHasSidebar = false}: {layoutHasSidebar: boolean}) => (
               }}>
               هه‌موو مافێكی پارێزراوه‌
             </span>
+=======
+            {`Copyright © ${new Date().getFullYear()} Meta Platforms, Inc.`}
+>>>>>>> ee7705675d2304c53c174b9fb316e2fbde1e9fb3
           </p>
         </section>
       </div>
