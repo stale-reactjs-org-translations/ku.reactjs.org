@@ -81,27 +81,27 @@ We recommend going through [this JavaScript overview](https://developer.mozilla.
 >
 >Whenever you get confused by something in JavaScript, [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [javascript.info](https://javascript.info/) are great websites to check. There are also [community support forums](/community/support.html) where you can ask for help.
 
-### Practical Tutorial {#practical-tutorial}
+### فێرکاری کرداری {#practical-tutorial}
 
 If you prefer to **learn by doing,** check out our [practical tutorial](/tutorial/tutorial.html). In this tutorial, we build a tic-tac-toe game in React. You might be tempted to skip it because you're not building games -- but give it a chance. The techniques you'll learn in the tutorial are fundamental to building *any* React apps, and mastering it will give you a much deeper understanding.
 
-### Step-by-Step Guide {#step-by-step-guide}
+### ڕێنیشاندەری هەنگاو بە هەنگاو {#step-by-step-guide}
 
 If you prefer to **learn concepts step by step,** our [guide to main concepts](/docs/hello-world.html) is the best place to start. Every next chapter in it builds on the knowledge introduced in the previous chapters so you won't miss anything as you go along.
 
-### Thinking in React {#thinking-in-react}
+### بیرکردنەوە لە ڕیاکت {#thinking-in-react}
 
 Many React users credit reading [Thinking in React](/docs/thinking-in-react.html) as the moment React finally "clicked" for them. It's probably the oldest React walkthrough but it's still just as relevant.
 
-### Recommended Courses {#recommended-courses}
+### کۆرسە پێشنیارکراوەکان {#recommended-courses}
 
 Sometimes people find third-party books and video courses more helpful than the official documentation. We maintain [a list of commonly recommended resources](/community/courses.html), some of which are free.
 
-### Advanced Concepts {#advanced-concepts}
+### چەمکە پێشکەوتووەکان {#advanced-concepts}
 
 Once you're comfortable with the [main concepts](/docs/hello-world.html) and played with React a little bit, you might be interested in more advanced topics. This section will introduce you to the powerful, but less commonly used React features like [context](/docs/context.html) and [refs](/docs/refs-and-the-dom.html).
 
-### API Reference {#api-reference}
+### سەرچاوەی API {#api-reference}
 
 This documentation section is useful when you want to learn more details about a particular React API. For example, [`React.Component` API reference](/docs/react-component.html) can provide you with details on how `setState()` works, and what different lifecycle methods are useful for.
 
