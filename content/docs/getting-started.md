@@ -34,13 +34,13 @@ This page is an overview of the React documentation and related resources.
 
 React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need.** Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
 
-### Online Playgrounds {#online-playgrounds}
+### یاریگاکانی ئۆنلاین {#online-playgrounds}
 
 If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), or [Glitch](https://glitch.com/edit/#!/remix/starter-react-template).
 
 If you prefer to use your own text editor, you can also [download this HTML file](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we'd only recommend using this for simple demos.
 
-### Add React to a Website {#add-react-to-a-website}
+### دامەزراندنی ڕیاکت لە سەر مالەپەریک {#add-react-to-a-website}
 
 You can [add React to an HTML page in one minute](/docs/add-react-to-a-website.html). You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
 
@@ -59,19 +59,19 @@ People come to React from different backgrounds and with different learning styl
 
 Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you *will* get the hang of it.
 
-### First Examples {#first-examples}
+### نموونەی یەکەم {#first-examples}
 
 The [React homepage](/) contains a few small React examples with a live editor. Even if you don't know anything about React yet, try changing their code and see how it affects the result.
 
-### React for Beginners {#react-for-beginners}
+### ڕیاکت بۆ دەستپێکەرەکان {#react-for-beginners}
 
 If you feel that the React documentation goes at a faster pace than you're comfortable with, check out [this overview of React by Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). It introduces the most important React concepts in a detailed, beginner-friendly way. Once you're done, give the documentation another try!
 
-### React for Designers {#react-for-designers}
+### ڕیاکت بۆ دیزاینەرەکان {#react-for-designers}
 
 If you're coming from a design background, [these resources](https://reactfordesigners.com/) are a great place to get started.
 
-### JavaScript Resources {#javascript-resources}
+### سەرچاوەکانی جاوا ئیسکیریپت {#javascript-resources}
 
 The React documentation assumes some familiarity with programming in the JavaScript language. You don't have to be an expert, but it's harder to learn both React and JavaScript at the same time.
 
