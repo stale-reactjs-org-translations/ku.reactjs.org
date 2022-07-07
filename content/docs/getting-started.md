@@ -105,11 +105,11 @@ Once you're comfortable with the [main concepts](/docs/hello-world.html) and pla
 
 This documentation section is useful when you want to learn more details about a particular React API. For example, [`React.Component` API reference](/docs/react-component.html) can provide you with details on how `setState()` works, and what different lifecycle methods are useful for.
 
-### Glossary and FAQ {#glossary-and-faq}
+### فەرهەنگ و پرسیارە زۆر لێ کراوەکان {#glossary-and-faq}
 
 The [glossary](/docs/glossary.html) contains an overview of the most common terms you'll see in the React documentation. There is also a FAQ section dedicated to short questions and answers about common topics, including [making AJAX requests](/docs/faq-ajax.html), [component state](/docs/faq-state.html), and [file structure](/docs/faq-structure.html).
 
-## Staying Informed {#staying-informed}
+## ئاگادار مانەوە {#staying-informed}
 
 The [React blog](/blog/) is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted there first.
 
