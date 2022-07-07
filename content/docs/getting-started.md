@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: ده‌ستپێبكه‌
 permalink: docs/getting-started.html
 next: add-react-to-a-website.html
 redirect_from:
@@ -24,13 +24,13 @@ This page is an overview of the React documentation and related resources.
 
 ---
 
-- [Try React](#try-react)
-- [Learn React](#learn-react)
+- [تاقی کردنی ڕیاکت](#try-react)
+- [فێربوونی ڕیاکت](#learn-react)
 - [Staying Informed](#staying-informed)
 - [Versioned Documentation](#versioned-documentation)
-- [Something Missing?](#something-missing)
+- [شتێک لەبیر چووە؟](#something-missing)
 
-## Try React {#try-react}
+## تاقی کردنی ڕیاکت {#try-react}
 
 React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need.** Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
 
@@ -44,13 +44,13 @@ If you prefer to use your own text editor, you can also [download this HTML file
 
 You can [add React to an HTML page in one minute](/docs/add-react-to-a-website.html). You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
 
-### Create a New React App {#create-a-new-react-app}
+### سازکردنی ئەپی ڕیاکتی نوێ {#create-a-new-react-app}
 
 When starting a React project, a [simple HTML page with script tags](/docs/add-react-to-a-website.html) might still be the best option. It only takes a minute to set up!
 
 As your application grows, you might want to consider a more integrated setup. There are [several JavaScript toolchains](/docs/create-a-new-react-app.html) we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem.
 
-## Learn React {#learn-react}
+## فێربوونی ڕیاکت {#learn-react}
 
 People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you'll find this section helpful.
 
