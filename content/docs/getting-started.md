@@ -117,10 +117,10 @@ You can also follow the [@reactjs account](https://twitter.com/reactjs) on Twitt
 
 Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the [`CHANGELOG.md` file in the React repository](https://github.com/facebook/react/blob/master/CHANGELOG.md), as well as on the [Releases](https://github.com/facebook/react/releases) page.
 
-## Versioned Documentation {#versioned-documentation}
+## دۆکیومێنتە کۆپیکراوەکان {#versioned-documentation}
 
 This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a [separate page](/versions). Note that documentation for past versions is snapshotted at the time of the release, and isn't being continuously updated.
 
-## Something Missing? {#something-missing}
+## شتێک ونبووە؟ {#something-missing}
 
 If something is missing in the documentation or if you found some part confusing, please [file an issue for the documentation repository](https://github.com/reactjs/reactjs.org/issues/new) with your suggestions for improvement, or tweet at the [@reactjs account](https://twitter.com/reactjs). We love hearing from you!
