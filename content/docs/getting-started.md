@@ -34,13 +34,13 @@ This page is an overview of the React documentation and related resources.
 
 React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need.** Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
 
-### یاریگاکانی ئۆنلاین {#online-playgrounds}
+### یاریگا ئۆنلاینەکان {#online-playgrounds}
 
 If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), or [Glitch](https://glitch.com/edit/#!/remix/starter-react-template).
 
 If you prefer to use your own text editor, you can also [download this HTML file](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we'd only recommend using this for simple demos.
 
-### دامەزراندنی ڕیاکت لە سەر مالەپەریک {#add-react-to-a-website}
+### زیادکردنی ڕیاکت بۆ ماڵپەڕێک {#add-react-to-a-website}
 
 You can [add React to an HTML page in one minute](/docs/add-react-to-a-website.html). You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
 
@@ -63,7 +63,7 @@ Like any unfamiliar technology, React does have a learning curve. With practice 
 
 The [React homepage](/) contains a few small React examples with a live editor. Even if you don't know anything about React yet, try changing their code and see how it affects the result.
 
-### ڕیاکت بۆ دەستپێکەرەکان {#react-for-beginners}
+### ڕیاکت بۆ ئاستی سەرەتایی {#react-for-beginners}
 
 If you feel that the React documentation goes at a faster pace than you're comfortable with, check out [this overview of React by Tania Rascia](https://www.taniarascia.com/getting-started-with-react/). It introduces the most important React concepts in a detailed, beginner-friendly way. Once you're done, give the documentation another try!
 
@@ -71,7 +71,7 @@ If you feel that the React documentation goes at a faster pace than you're comfo
 
 If you're coming from a design background, [these resources](https://reactfordesigners.com/) are a great place to get started.
 
-### سەرچاوەکانی جاوا ئیسکیریپت {#javascript-resources}
+### سەرچاوەکانی جاڤاسکریپت {#javascript-resources}
 
 The React documentation assumes some familiarity with programming in the JavaScript language. You don't have to be an expert, but it's harder to learn both React and JavaScript at the same time.
 
@@ -81,15 +81,15 @@ We recommend going through [this JavaScript overview](https://developer.mozilla.
 >
 >Whenever you get confused by something in JavaScript, [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [javascript.info](https://javascript.info/) are great websites to check. There are also [community support forums](/community/support.html) where you can ask for help.
 
-### فێرکاری کرداری {#practical-tutorial}
+### فێرکاریی کرداری {#practical-tutorial}
 
 If you prefer to **learn by doing,** check out our [practical tutorial](/tutorial/tutorial.html). In this tutorial, we build a tic-tac-toe game in React. You might be tempted to skip it because you're not building games -- but give it a chance. The techniques you'll learn in the tutorial are fundamental to building *any* React apps, and mastering it will give you a much deeper understanding.
 
-### ڕێنیشاندەری هەنگاو بە هەنگاو {#step-by-step-guide}
+### ڕێنیشاندەری هەنگاوبەهەنگاو {#step-by-step-guide}
 
 If you prefer to **learn concepts step by step,** our [guide to main concepts](/docs/hello-world.html) is the best place to start. Every next chapter in it builds on the knowledge introduced in the previous chapters so you won't miss anything as you go along.
 
-### بیرکردنەوە لە ڕیاکت {#thinking-in-react}
+### بیرکردنەوە بە ڕیاکت {#thinking-in-react}
 
 Many React users credit reading [Thinking in React](/docs/thinking-in-react.html) as the moment React finally "clicked" for them. It's probably the oldest React walkthrough but it's still just as relevant.
 
@@ -105,7 +105,7 @@ Once you're comfortable with the [main concepts](/docs/hello-world.html) and pla
 
 This documentation section is useful when you want to learn more details about a particular React API. For example, [`React.Component` API reference](/docs/react-component.html) can provide you with details on how `setState()` works, and what different lifecycle methods are useful for.
 
-### فەرهەنگ و پرسیارە زۆر لێ کراوەکان {#glossary-and-faq}
+### فەرهەنگ و پرسیارە دووبارەبووەکان {#glossary-and-faq}
 
 The [glossary](/docs/glossary.html) contains an overview of the most common terms you'll see in the React documentation. There is also a FAQ section dedicated to short questions and answers about common topics, including [making AJAX requests](/docs/faq-ajax.html), [component state](/docs/faq-state.html), and [file structure](/docs/faq-structure.html).
 
@@ -117,10 +117,10 @@ You can also follow the [@reactjs account](https://twitter.com/reactjs) on Twitt
 
 Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the [`CHANGELOG.md` file in the React repository](https://github.com/facebook/react/blob/master/CHANGELOG.md), as well as on the [Releases](https://github.com/facebook/react/releases) page.
 
-## دۆکیومێنتە کۆپیکراوەکان {#versioned-documentation}
+## دۆکیومێنتە وەشانکراوەکان {#versioned-documentation}
 
 This documentation always reflects the latest stable version of React. Since React 16, you can find older versions of the documentation on a [separate page](/versions). Note that documentation for past versions is snapshotted at the time of the release, and isn't being continuously updated.
 
-## شتێک ونبووە؟ {#something-missing}
+## کەموکورتی هەیە؟ {#something-missing}
 
 If something is missing in the documentation or if you found some part confusing, please [file an issue for the documentation repository](https://github.com/reactjs/reactjs.org/issues/new) with your suggestions for improvement, or tweet at the [@reactjs account](https://twitter.com/reactjs). We love hearing from you!
