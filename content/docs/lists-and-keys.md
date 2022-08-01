@@ -43,13 +43,14 @@ const listItems = numbers.map((number) =>
 );
 ```
 
+<<<<<<< HEAD
 ئەڕەی `listItems` دەخەینە ناو ئیلیمینتی `<ul>`، پاشان [ڕێندەر دەکرێت لە DOM دا](/docs/rendering-elements.html#rendering-an-element-into-the-dom).
+=======
+Then, we can include the entire `listItems` array inside a `<ul>` element:
+>>>>>>> 8223159395aae806f8602de35e6527d35260acfb
 
 ```javascript{2}
-ReactDOM.render(
-  <ul>{listItems}</ul>,
-  document.getElementById('root')
-);
+<ul>{listItems}</ul>
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/GjPyQr?editors=0011)
@@ -74,10 +75,8 @@ function NumberList(props) {
 }
 
 const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<NumberList numbers={numbers} />);
 ```
 
 کاتێک ئەم کۆدە ڕەن دەکەیت، ئاگاداریەک وەردەگریت کە ئەڵێت ئاتیمەکانی لیستەکە پێویستە کیی یان هەبێت.کی تایبەتمەندیەکە کە نرخەکەی پیت یان ژمارەی بێ وێنەیە کاتێک لیست لە ئیلیمێنت دروست دەکەیت پێویستە هەیان بێت.گفتوگۆی لەسەر دەکەین کە بۆچی کی گرنگە لە بەشی داهاتوودا.
@@ -96,12 +95,6 @@ function NumberList(props) {
     <ul>{listItems}</ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/jrXYRR?editors=0011)
@@ -175,12 +168,6 @@ function NumberList(props) {
     </ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 **نموونەی : بەکارهێنانی کی بە شێوەیەکی ڕاست**
@@ -203,12 +190,6 @@ function NumberList(props) {
     </ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/ZXeOGM?editors=0010)
@@ -253,10 +234,9 @@ const posts = [
   {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
   {id: 2, title: 'Installation', content: 'You can install React from npm.'}
 ];
-ReactDOM.render(
-  <Blog posts={posts} />,
-  document.getElementById('root')
-);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Blog posts={posts} />);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/NRZYGN?editors=0010)
