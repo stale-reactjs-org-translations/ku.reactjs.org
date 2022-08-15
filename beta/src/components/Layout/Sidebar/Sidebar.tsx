@@ -9,13 +9,12 @@ import {MenuContext} from 'components/useMenu';
 import {useMediaQuery} from '../useMediaQuery';
 import {SidebarRouteTree} from './SidebarRouteTree';
 import {Search} from 'components/Search';
-import {Button} from 'components/Button';
 import {MobileNav} from '../Nav/MobileNav';
 import {Feedback} from '../Feedback';
 
 const SIDEBAR_BREAKPOINT = 1023;
 
-export function Sidebar({isMobileOnly}: {isMobileOnly?: boolean}) {
+export function Sidebar() {
   const {menuRef, isOpen} = React.useContext(MenuContext);
   const isMobileSidebar = useMediaQuery(SIDEBAR_BREAKPOINT);
   let routeTree = React.useContext(SidebarContext);
@@ -32,7 +31,7 @@ export function Sidebar({isMobileOnly}: {isMobileOnly?: boolean}) {
         isOpen ? 'block z-40' : 'hidden lg:block'
       )}
       aria-hidden={isHidden}>
-      <div className="px-5">
+      <div className="px-5 pt-16 sm:pt-10 lg:pt-0">
         <Search />
       </div>
       <nav
@@ -43,7 +42,10 @@ export function Sidebar({isMobileOnly}: {isMobileOnly?: boolean}) {
         {isMobileSidebar ? (
           <MobileNav />
         ) : (
-          <SidebarRouteTree routeTree={routeTree} />
+          /* No fallback UI so need to be careful not to suspend directly inside. */
+          <React.Suspense fallback={null}>
+            <SidebarRouteTree routeTree={routeTree} />
+          </React.Suspense>
         )}
       </nav>
       <div className="sticky bottom-0 hidden lg:block">
