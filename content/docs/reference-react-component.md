@@ -56,7 +56,11 @@ Each component has several "lifecycle methods" that you can override to run code
 
 >تێبینی:
 >
+<<<<<<< HEAD
 >ئەم میسۆدانە ڕەچاو دەکرێن وەکو بەجێماو وە پێویست دەکات [دوورکەویتەوە لێیان ](/blog/2018/03/27/update-on-async-rendering.html)  لە کۆدە تازەکاندا:
+=======
+>This method is considered legacy and you should [avoid it](/blog/2018/03/27/update-on-async-rendering.html) in new code:
+>>>>>>> e3073b03a5b9eff4ef12998841b9e56120f37e26
 >
 >- [`UNSAFE_componentWillMount()`](#unsafe_componentwillmount)
 
@@ -545,12 +549,16 @@ UNSAFE_componentWillUpdate(nextProps, nextState)
 ### `setState()` {#setstate}
 
 ```javascript
-setState(updater, [callback])
+setState(updater[, callback])
 ```
 
 `setState()` گۆڕانکارییەکان بە ڕیز زیاد دەکات بۆ ستەت کۆمپۆنێنتەکە وە بە ڕیاکت دەڵێت کە ئەم کۆمپۆنێنتە و چایەڵدەکانی پێویستان بە ڕی-ڕێندەرکردن هەیە لەگەڵ ئەپدەیت کردنی ستەت. ئەمە میسۆدی بنچینەییە بۆ تازەکردنەوەی یوزەر ئینتەرفەیس لەبەرامبەر ئیڤێنت هەڵگرەکان و وەڵام دانەوەی سێرڤەرەکان.
 
+<<<<<<< HEAD
 بیر لە  `setState()` بکەرەوە وەکو ڕیکوێستێک نەک وەکو کۆماندێک بۆ تازەکردنەوەی کۆمپۆنێنت. بۆ جێبەجێکردنێکی باشتر, ڕیاکت کاتی دەداتێ پاشان کۆمەڵە کۆمپۆنێنتێنک پێکەوە تازەدەکاتەوە لە یەک جارە. ڕیاکت گرەنتی ئەوەناکات کە گۆڕانکارییەکانی ستەتە دەستبەجێ زیاد کرێ.
+=======
+Think of `setState()` as a *request* rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. In the rare case that you need to force the DOM update to be applied synchronously, you may wrap it in [`flushSync`](/docs/react-dom.html#flushsync), but this may hurt performance.
+>>>>>>> e3073b03a5b9eff4ef12998841b9e56120f37e26
 
 `setState()` هەموو کاتێک دەستبەجێ کۆمپۆنێنتەکە تازەناکاتەوە . لەوانەیە ئەپدەیتەکە ڕێک بخات یان بیوەستێنی تا دواتر. ئەمە وادەکات خوێندنەوەی `this.state`بکەوێتە دوای بانگکردنی  `setState()` شاردنەوەی گەشەکردن. لەجیاتی ئەوە,  `componentDidUpdate` یان   `setState` callback (`setState(updater, callback)`) بەکاربێنە, ، وە گرەنتی کراون کە دەست پێدەکەن پاش ئەوەی ئەپدەیتکە زیادکرا. گەر پێویستە ستەت دانێیت بە بنجینەی ستەتی پێشوو دەربارەی,  `updater` بخوێنەرەوە لەم بەشەی خوارەوە.
 
