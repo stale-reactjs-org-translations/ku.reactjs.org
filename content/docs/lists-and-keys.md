@@ -43,13 +43,14 @@ const listItems = numbers.map((number) =>
 );
 ```
 
+<<<<<<< HEAD
 ئەڕەی `listItems` دەخەینە ناو ئیلیمینتی `<ul>`، پاشان [ڕێندەر دەکرێت لە DOM دا](/docs/rendering-elements.html#rendering-an-element-into-the-dom).
+=======
+Then, we can include the entire `listItems` array inside a `<ul>` element:
+>>>>>>> d07016aea812d26c60252a952bff7ae3e70bde27
 
 ```javascript{2}
-ReactDOM.render(
-  <ul>{listItems}</ul>,
-  document.getElementById('root')
-);
+<ul>{listItems}</ul>
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/GjPyQr?editors=0011)
@@ -74,10 +75,8 @@ function NumberList(props) {
 }
 
 const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<NumberList numbers={numbers} />);
 ```
 
 کاتێک ئەم کۆدە ڕەن دەکەیت، ئاگاداریەک وەردەگریت کە ئەڵێت ئاتیمەکانی لیستەکە پێویستە کیی یان هەبێت.کی تایبەتمەندیەکە کە نرخەکەی پیت یان ژمارەی بێ وێنەیە کاتێک لیست لە ئیلیمێنت دروست دەکەیت پێویستە هەیان بێت.گفتوگۆی لەسەر دەکەین کە بۆچی کی گرنگە لە بەشی داهاتوودا.
@@ -96,12 +95,6 @@ function NumberList(props) {
     <ul>{listItems}</ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/jrXYRR?editors=0011)
@@ -140,7 +133,11 @@ const todoItems = todos.map((todo, index) =>
 );
 ```
 
+<<<<<<< HEAD
 ئێمە پێشنیاری ئەوە ناکەین ئیندێکس بەکار بێنیت وەکو کی  چونکە گەر جێگۆرکێیان بەسەرا بێت، ئەنجامی خراپی دەبێت لە پێرفۆڕمانس وە لەوانەییە ببێت بە کێشە لەگەڵ ستەتی کۆمپۆنێنتەکە. سەیرێکی ئارتیکڵەکەی ڕۆبین پۆکۆرنی بکە بە ناونیشانی  [ڕوونکردنەوەیەکی تەواو لەسەر ئەنجامە خراپەکانی بەکارهێنانی ئیندێکس وەکو کی](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318).  گەر ئەوەت هەڵبژاردووە کە کی بۆ ئایتمەکان دانەنێیت ئەوا ڕیاکت بەشێوە سەرەکیەکە خۆی ئیندێکسەکان بەکار دەهێنێت وەکو کی.
+=======
+We don't recommend using indexes for keys if the order of items may change. This can negatively impact performance and may cause issues with component state. Check out Robin Pokorny's article for an [in-depth explanation on the negative impacts of using an index as a key](https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/). If you choose not to assign an explicit key to list items then React will default to using indexes as keys.
+>>>>>>> d07016aea812d26c60252a952bff7ae3e70bde27
 
 ئەمەش [ڕوونکردنەوەیەکیی تەواو دەربارەی بۆچی کییەکان پێویستن ](/docs/reconciliation.html#recursing-on-children) ئەگەر ئارەزووی زیاتر فێربوون دەکەیت.
 
@@ -175,12 +172,6 @@ function NumberList(props) {
     </ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 **نموونەی : بەکارهێنانی کی بە شێوەیەکی ڕاست**
@@ -203,12 +194,6 @@ function NumberList(props) {
     </ul>
   );
 }
-
-const numbers = [1, 2, 3, 4, 5];
-ReactDOM.render(
-  <NumberList numbers={numbers} />,
-  document.getElementById('root')
-);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/ZXeOGM?editors=0010)
@@ -253,10 +238,9 @@ const posts = [
   {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
   {id: 2, title: 'Installation', content: 'You can install React from npm.'}
 ];
-ReactDOM.render(
-  <Blog posts={posts} />,
-  document.getElementById('root')
-);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Blog posts={posts} />);
 ```
 
 [**تاقیبکەرەوە لە کۆد پێن**](https://codepen.io/gaearon/pen/NRZYGN?editors=0010)
