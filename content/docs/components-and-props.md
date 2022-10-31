@@ -72,26 +72,39 @@ When React sees an element representing a user-defined component, it passes JSX 
 
 بۆ نمونە، ئەم کۆدە لەسەر پەڕەکە "سڵاو هێرۆ" وێنا ئەکات:
 
-```js{1,5}
+```js{1,6}
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
+<<<<<<< HEAD
 const element = <Welcome name="Hero" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
 );
+=======
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <Welcome name="Sara" />;
+root.render(element);
+>>>>>>> e21b37c8cc8b4e308015ea87659f13aa26bd6356
 ```
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/YGYmEG?editors=1010)**
 
 کەواتە پوختەی ئەم نمونەیە چی بوو:
 
+<<<<<<< HEAD
 1. بانگی `ReactDOM.render()` ئەکەین بە یەکەی `<Welcome name="Hero" />`.
 2. ڕیئاک بانگی کۆمپۆنێنتی `Welcome` ئەکات بە `{name: 'Hero'}` پرۆپی name.
 3. کۆمپۆنێنتی `Welcome` ئەم تاگە ئەگەڕێنێتەوە `<h1>Hello, Hero</h1>` وەک ئەنجامی کۆتایی.
 4. ڕیئاکت خۆی DOM تازە ئەکاتەوە (تایبەتە بە ڕئیکات) کە ئەم تاگە وابێت `<h1>Hello, Hero</h1>`.
+=======
+1. We call `root.render()` with the `<Welcome name="Sara" />` element.
+2. React calls the `Welcome` component with `{name: 'Sara'}` as the props.
+3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
+4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
+>>>>>>> e21b37c8cc8b4e308015ea87659f13aa26bd6356
 
 >**تێبینی:** هەمیشە با کۆمپۆنێنتەکانت بە پیتی گەورە/کەپیتاڵ دەست پێ بکەن.
 >
@@ -118,11 +131,6 @@ function App() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
 ```
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/KgQKPr?editors=1010)**
