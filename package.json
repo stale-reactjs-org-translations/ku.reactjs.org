@@ -47,10 +47,14 @@
     "normalize.css": "^8.0.0",
     "prettier": "^1.7.4",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "prismjs": "^1.15.0",
 =======
     "prismjs": "^1.25.0",
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+    "prismjs": "^1.27.0",
+>>>>>>> 822330c3dfa686dbb3424886abce116f20ed20e6
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^5.2.0",
@@ -102,5 +106,8 @@
     "npm-run-all": "^4.1.5",
     "recursive-readdir": "^2.2.1",
     "unist-util-map": "^1.0.3"
+  },
+  "resolutions": {
+    "**/sharp": "^0.30.3"
   }
 }
