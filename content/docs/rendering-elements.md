@@ -36,12 +36,16 @@ const element = <h1>سڵاو, جیهان</h1>;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ئەپەکانی بەس بە ڕیاکت دروستکراون تەنها زۆر جار یەک ڕەگی دۆم نۆدیان هەیە.
 ئەگەر تۆ ڕیاکت یەکبەخەی بۆ ناو ئەپێک کە بوونی هەبێ تۆ ئەتوانی چەنێک ڕەگی دۆم نۆدی جیاکراووەت هەبێ بتەوێت
 `ReactDOM.render()` بۆ ڕیندەرکردنی پێکهاتەیەکی ڕیاکت بۆ (ڕووت دۆم نۆد)هەردوکیان تێپەڕدەبن بۆ ڕییەکت دۆم   :
 =======
 To render a React element into a root DOM node, pass both to [`ReactDOM.render()`](/docs/react-dom.html#render):
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+To render a React element, first pass the DOM element to [`ReactDOM.createRoot()`](/docs/react-dom-client.html#createroot), then pass the React element to `root.render()`:
+>>>>>>> 1a641bb88e647186f260dd2a8e56f0b083f2e46b
 
 `embed:rendering-elements/render-an-element.js`
 
@@ -56,9 +60,13 @@ To render a React element into a root DOM node, pass both to [`ReactDOM.render()
  دەبینێت لە خاڵێکی دیاریکراوی کات دا(ui) ڕۆڵی 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 With our knowledge so far, the only way to update the UI is to create a new element, and pass it to [`ReactDOM.render()`](/docs/react-dom.html#render).
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+With our knowledge so far, the only way to update the UI is to create a new element, and pass it to `root.render()`.
+>>>>>>> 1a641bb88e647186f260dd2a8e56f0b083f2e46b
 
 
 بریتییە لە دروستکردنی پێکهاتەی نوێ، وە کردنەناو (ui)لەگەڵ ئەو زانیاریانەەی هەمانە ، تاکە ڕێگە بۆ نوێ کردنەوەی 
@@ -70,19 +78,27 @@ With our knowledge so far, the only way to update the UI is to create a new elem
 **[Try it on CodePen](https://codepen.io/gaearon/pen/gwoJZk?editors=1010)**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 It calls [`ReactDOM.render()`](/docs/react-dom.html#render) every second from a [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+It calls [`root.render()`](/docs/react-dom.html#render) every second from a [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) callback.
+>>>>>>> 1a641bb88e647186f260dd2a8e56f0b083f2e46b
 
  [`setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval) هەموو چرکەیەک لە `ReactDOM.render()` پێی ئەڵێن 
 >**تێبینی:**
 >
+<<<<<<< HEAD
 <<<<<<< HEAD
 > لە بڕگەکانی دواتر فێردەبین چۆن کۆدەکان ئەوها دەستدەکەون خراونەتە ناو .`ReactDOM.render()`لە کرداری(عەمەلی)، زۆربەی بەرنامەکانی رییاکت تەنها یەکجار پێیان دەوترێ
 [ستەیتفول کۆمپۆنێنت](/docs/state-and-lifecycle.html).
 =======
 >In practice, most React apps only call [`ReactDOM.render()`](/docs/react-dom.html#render) once. In the next sections we will learn how such code gets encapsulated into [stateful components](/docs/state-and-lifecycle.html).
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+>In practice, most React apps only call `root.render()` once. In the next sections we will learn how such code gets encapsulated into [stateful components](/docs/state-and-lifecycle.html).
+>>>>>>> 1a641bb88e647186f260dd2a8e56f0b083f2e46b
 >
 >ئێمە پێشنیار دەکەین کە بابەتەکان نەپەڕێنیت چونکە لەسەر یەک بونیاد دەنرێن
 
