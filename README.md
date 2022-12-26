@@ -9,7 +9,7 @@
 =======
 1. Git
 1. Node: any 12.x version starting with v12.0.0 or greater
-1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
+1. Yarn v1: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
 1. A fork of the repo (for any contributions)
 1. A clone of the [reactjs.org repo](https://github.com/reactjs/reactjs.org) on your local machine
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
@@ -111,6 +111,7 @@ If you are interested in translating `reactjs.org`, please see the current trans
 
 ### په‌ره‌یه‌ک هه‌ڵبژێره‌ بۆ وه‌رگێڕان
 
+<<<<<<< HEAD
 له‌ [بابه‌تی #١]( https://github.com/reactjs/ku.reactjs.org/issues/1)، ئه‌و په‌ڕانه‌ی که‌ پێویستییان به‌ وه‌رگێڕانه‌، ریزکراون. پێش هه‌موو شتێک، پێویسته‌ له‌ په‌ڕه‌کانی Core Pages ده‌ستپێبکه‌ین به‌و ریزبه‌ندییه‌ی ئاماژه‌ی پێکراوه‌. یه‌کێک له‌و په‌ڕانه‌ی که‌ حه‌زت لێیه‌و ئاشنای پێی، هه‌ڵبژێره‌.
 
 تێبینی: ئه‌و په‌ڕانه‌ی که‌ ئه‌م هێمایه‌یان [x] به‌ ته‌نیشته‌وه‌یه‌، وه‌رگێردراون. ئه‌گه‌ر ناوی هه‌رکه‌سێک له‌ ته‌نیشت په‌ڕه‌یه‌ک دانرابێت، ئه‌وا، ئه‌رکی وه‌رگێڕانی ئه‌و په‌ڕه‌یه‌ له‌ ئه‌ستۆی ئه‌و که‌سه‌دایه‌.
@@ -201,3 +202,7 @@ yarn check-all
 گۆرانکارییه‌کانت له‌ لایه‌ن تیمی مه‌ینته‌ینه‌ره‌وه‌، پێداچوونه‌وه‌یان بۆ ده‌کرێت و بۆچوونی خۆیان به‌ ئێوه‌ ده‌ڵێن. پاش په‌سه‌ند کردن، گۆرانکارییه‌کانتان زیاد ده‌کرێت. 
 
 </div>
+=======
+## License
+Content submitted to [reactjs.org](https://reactjs.org/) is CC-BY-4.0 licensed, as found in the [LICENSE-DOCS.md](LICENSE-DOCS.md) file.
+>>>>>>> 4b68508440a985598571f78f60637b6dccdd5a1a
