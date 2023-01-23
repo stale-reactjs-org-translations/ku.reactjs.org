@@ -101,11 +101,6 @@ class Toggle extends React.Component {
     );
   }
 }
-
-ReactDOM.render(
-  <Toggle />,
-  document.getElementById('root')
-);
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/xEmzGg?editors=0010)
@@ -120,14 +115,17 @@ ReactDOM.render(
 
 ئه‌گه‌ر وه‌ڕه‌ز ده‌بێت به‌ بانگكردنی `bind`، دوو رێگای تر هه‌یه‌ كه‌ ده‌توانیت به‌كاریان بهێنیت. ئه‌گه‌ر رسته‌كاری  [public class fields syntax](https://babeljs.io/docs/plugins/transform-class-properties/) به‌كارده‌هێنیت، ئه‌وا ده‌توانیت فیڵدی كڵاس به‌كاربێنی بۆ ئه‌وه‌ی به‌ شێوازێكی دروست كۆڵبه‌كه‌كان ببه‌ستیته‌وه‌:
 
+<<<<<<< HEAD
+=======
+If calling `bind` annoys you, there are two ways you can get around this. You can use [public class fields syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#public_instance_fields) to correctly bind callbacks:
+>>>>>>> 38bf76a4a7bec6072d086ce8efdeef9ebb7af227
 
 ```js{2-6}
 class LoggingButton extends React.Component {
   // This syntax ensures `this` is bound within handleClick.
-  // Warning: this is *experimental* syntax.
   handleClick = () => {
     console.log('this is:', this);
-  }
+  };
 
   render() {
     return (
