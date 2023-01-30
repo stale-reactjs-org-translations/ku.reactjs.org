@@ -6,7 +6,20 @@ prev: hello-world.html
 next: rendering-elements.html
 ---
 
+<<<<<<< HEAD
 پێناسەکردنی ئەم گۆڕاوە لەبەرچاو بگرە:
+=======
+> Try the new React documentation.
+> 
+> These new documentation pages teach modern React and include live examples:
+>
+> - [Writing Markup with JSX](https://beta.reactjs.org/learn/writing-markup-with-jsx)
+> - [JavaScript in JSX with Curly Braces](https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-braces)
+>
+> The new docs will soon replace this site, which will be archived. [Provide feedback.](https://github.com/reactjs/reactjs.org/issues/3308)
+
+Consider this variable declaration:
+>>>>>>> 5647a9485db3426d62b5a8203f4499c01bcd789b
 
 ```js
 const element = <h1>سڵاو، جیهان!</h1>;
@@ -51,6 +64,7 @@ In the example below, we declare a variable called `name` and then use it inside
 
 لەم نموونەیەی خوارەوەدا، گۆڕاوێک پێناسە دەکەین بەناوی `name` و پاشان بەکاری دەهێنین لەنێو JSX دا بە پێچانەوەی لەنێو کەوانی لوولدا:
 ```js{1,2}
+<<<<<<< HEAD
 const name = 'ئاسۆ نادری';
 const element = <h1>سڵاو، {name}</h1>;
 
@@ -58,6 +72,10 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
+=======
+const name = 'Josh Perez';
+const element = <h1>Hello, {name}</h1>;
+>>>>>>> 5647a9485db3426d62b5a8203f4499c01bcd789b
 ```
 
 You can put any valid [JavaScript expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) inside the curly braces in JSX. For example, `2 + 2`, `user.firstName`, or `formatName(user)` are all valid JavaScript expressions.
@@ -81,11 +99,6 @@ const element = (
   <h1>
     Hello, {formatName(user)}!
   </h1>
-);
-
-ReactDOM.render(
-  element,
-  document.getElementById('root')
 );
 ```
 
