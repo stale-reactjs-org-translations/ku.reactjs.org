@@ -16,7 +16,20 @@ prev: rendering-elements.html
 next: state-and-lifecycle.html
 ---
 
+<<<<<<< HEAD
 کۆمپۆنێنت یان بە کوردی "پێکهێنەر"ەکان ڕێگات ئەدەن ڕووکار دابەش بکەی بەسەر پارچەی سەربەخۆ، بەکارهێنراوە و بتوانی بەجیا بیریان لێ بکەیتەوە. ئەم پەڕەیە پێشەکیەکە بۆ بیرۆکەی کۆمپۆنێنت. ئەتوانی زانیاری زیاتر لە [وردەکاری APIی کۆمپۆنێنت لێرە](/docs/react-component.html) بببینیت.
+=======
+> Try the new React documentation.
+> 
+> These new documentation pages teach modern React and include live examples:
+>
+> - [Your First Component](https://beta.reactjs.org/learn/your-first-component)
+> - [Passing Props to a Component](https://beta.reactjs.org/learn/passing-props-to-a-component)
+>
+> The new docs will soon replace this site, which will be archived. [Provide feedback.](https://github.com/reactjs/reactjs.org/issues/3308)
+
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a [detailed component API reference here](/docs/react-component.html).
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 
 وەکو بیرۆکە، کۆمپۆنێنت لە فەنکشنی جاڤاسکریپت ئەچن. تواناری وەرگرتنی تێخراوی (ئینپۆت)ی هەڕەمەکی و دروستکردنی دانەی ڕیئاکت React element کە لەسەر شاشە نیشاندراوێک پێناسە بکرێت پێیان.
 
@@ -72,26 +85,39 @@ When React sees an element representing a user-defined component, it passes JSX 
 
 بۆ نمونە، ئەم کۆدە لەسەر پەڕەکە "سڵاو هێرۆ" وێنا ئەکات:
 
-```js{1,5}
+```js{1,6}
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
+<<<<<<< HEAD
 const element = <Welcome name="Hero" />;
 ReactDOM.render(
   element,
   document.getElementById('root')
 );
+=======
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <Welcome name="Sara" />;
+root.render(element);
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 ```
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/YGYmEG?editors=1010)**
 
 کەواتە پوختەی ئەم نمونەیە چی بوو:
 
+<<<<<<< HEAD
 1. بانگی `ReactDOM.render()` ئەکەین بە یەکەی `<Welcome name="Hero" />`.
 2. ڕیئاک بانگی کۆمپۆنێنتی `Welcome` ئەکات بە `{name: 'Hero'}` پرۆپی name.
 3. کۆمپۆنێنتی `Welcome` ئەم تاگە ئەگەڕێنێتەوە `<h1>Hello, Hero</h1>` وەک ئەنجامی کۆتایی.
 4. ڕیئاکت خۆی DOM تازە ئەکاتەوە (تایبەتە بە ڕئیکات) کە ئەم تاگە وابێت `<h1>Hello, Hero</h1>`.
+=======
+1. We call `root.render()` with the `<Welcome name="Sara" />` element.
+2. React calls the `Welcome` component with `{name: 'Sara'}` as the props.
+3. Our `Welcome` component returns a `<h1>Hello, Sara</h1>` element as the result.
+4. React DOM efficiently updates the DOM to match `<h1>Hello, Sara</h1>`.
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 
 >**تێبینی:** هەمیشە با کۆمپۆنێنتەکانت بە پیتی گەورە/کەپیتاڵ دەست پێ بکەن.
 >
@@ -118,11 +144,6 @@ function App() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
 ```
 
 **[Try it on CodePen](https://codepen.io/gaearon/pen/KgQKPr?editors=1010)**

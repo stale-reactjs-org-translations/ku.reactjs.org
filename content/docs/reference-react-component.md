@@ -15,7 +15,15 @@ redirect_from:
   - "tips/use-react-with-other-libraries.html"
 ---
 
+<<<<<<< HEAD
 ئەم پەڕەيیە وردەکاری تێدایە دەربارەی سەرچاوەکانی API بۆ ڕیاکت کۆمپۆنێنت کە بە شێوەی کڵاس ناسێندرابێت. بۆ ئەو مەبەستە پێویستە زانیاریت هەبێ لەسەر بەشە بنچینەییەکانی ڕیاکت، وەک  [Components and Props](/docs/components-and-props.html), هەروەها  [State and Lifecycle](/docs/state-and-lifecycle.html). گەر زانیاریت لەسەریان نییە، لە پێشدا ئەوانە بخوێنەرەوە.
+=======
+> Try the new React documentation for [`Component`](https://beta.reactjs.org/reference/react/Component).
+>
+> The new docs will soon replace this site, which will be archived. [Provide feedback.](https://github.com/reactjs/reactjs.org/issues/3308)
+
+This page contains a detailed API reference for the React component class definition. It assumes you're familiar with fundamental React concepts, such as [Components and Props](/docs/components-and-props.html), as well as [State and Lifecycle](/docs/state-and-lifecycle.html). If you're not, read them first.
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 
 ## پێشەکی {#overview}
 
@@ -56,7 +64,11 @@ Each component has several "lifecycle methods" that you can override to run code
 
 >تێبینی:
 >
+<<<<<<< HEAD
 >ئەم میسۆدانە ڕەچاو دەکرێن وەکو بەجێماو وە پێویست دەکات [دوورکەویتەوە لێیان ](/blog/2018/03/27/update-on-async-rendering.html)  لە کۆدە تازەکاندا:
+=======
+>This method is considered legacy and you should [avoid it](/blog/2018/03/27/update-on-async-rendering.html) in new code:
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 >
 >- [`UNSAFE_componentWillMount()`](#unsafe_componentwillmount)
 
@@ -129,11 +141,19 @@ render()
 
 کاتێک بانگ کرا , پێویستە ڕەچاوی  `this.props` وە `this.state` بکات وە یەکێک لەم جۆرانەی خوارەوە بگەڕێنێتەوە:
 
+<<<<<<< HEAD
 - **•	ئیلیمێنتەکانی ڕیاکت.** بەگشتی دروستدەبن بەهۆی [JSX](/docs/introducing-jsx.html). بۆ نموونە , `<div />` وە  `<MyComponent />` ڕیاکت ئیلیمێنتن کە ڕێنوێنی ڕیاکت دەکەن بۆ ڕێندەر کردنی نۆدێک لە دۆم, یاخود کۆمپۆنێنتێک کە بەکاربەر ناساندبێتی بەجیا.
 - **•	ئەڕەیەکان و فراگمێنتەکان.** . ڕێت پێدەدەن بە گەڕاندنەوەی زیاتر لە دانەیەک ئیلیمێنت لە ڕێندەرەوە. سەیری دۆکۆمێنتەکە بکە لەسەر  [fragments](/docs/fragments.html) بۆ وردەکاری زیاتر.
 - **•	پۆڕتاڵەکان**. ڕێت پێدەدەن بە گەڕاندنەوەی چیڵدرین لەناو دۆمە بەشە ترییەکی جیاوازدا. سەیری دۆکۆمێنتەکە بکە لەسەر [portals](/docs/portals.html) بۆ وردەکاری زیاتر.
 - **•	سترینگ و ژمارەکان.** ئەمانە ڕێندەر دەکرێن وەکو نۆدی تێکست لە دۆمدا.
 - **•	بووڵیەنس یان  نەڵ**. هیچ ڕێندەر ناکەن. (بە زۆری بوونیان هەیە بۆ پاڵپشتی لە `return test && <Child />`, کاتێک  `test` بووڵیەنە)
+=======
+- **React elements.** Typically created via [JSX](/docs/introducing-jsx.html). For example, `<div />` and `<MyComponent />` are React elements that instruct React to render a DOM node, or another user-defined component, respectively.
+- **Arrays and fragments.** Let you return multiple elements from render. See the documentation on [fragments](/docs/fragments.html) for more details.
+- **Portals**. Let you render children into a different DOM subtree. See the documentation on [portals](/docs/portals.html) for more details.
+- **String and numbers.** These are rendered as text nodes in the DOM.
+- **Booleans or `null` or `undefined`**. Render nothing. (Mostly exists to support `return test && <Child />` pattern, where `test` is boolean).
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 
 `render()` میسۆد پێویستە کامڵ بێت, واتا گۆڕان کاری دروست نەکات لە ستەتی کۆمپۆنێنتەکە، هەمان ئەنجام ئەگەڕینێتەوە هەرجارێ بەکارهات، وە بە ڕاستەوخۆی کار لەگەڵ وێبگەڕ ناکات.
 
@@ -545,12 +565,16 @@ UNSAFE_componentWillUpdate(nextProps, nextState)
 ### `setState()` {#setstate}
 
 ```javascript
-setState(updater, [callback])
+setState(updater[, callback])
 ```
 
 `setState()` گۆڕانکارییەکان بە ڕیز زیاد دەکات بۆ ستەت کۆمپۆنێنتەکە وە بە ڕیاکت دەڵێت کە ئەم کۆمپۆنێنتە و چایەڵدەکانی پێویستان بە ڕی-ڕێندەرکردن هەیە لەگەڵ ئەپدەیت کردنی ستەت. ئەمە میسۆدی بنچینەییە بۆ تازەکردنەوەی یوزەر ئینتەرفەیس لەبەرامبەر ئیڤێنت هەڵگرەکان و وەڵام دانەوەی سێرڤەرەکان.
 
+<<<<<<< HEAD
 بیر لە  `setState()` بکەرەوە وەکو ڕیکوێستێک نەک وەکو کۆماندێک بۆ تازەکردنەوەی کۆمپۆنێنت. بۆ جێبەجێکردنێکی باشتر, ڕیاکت کاتی دەداتێ پاشان کۆمەڵە کۆمپۆنێنتێنک پێکەوە تازەدەکاتەوە لە یەک جارە. ڕیاکت گرەنتی ئەوەناکات کە گۆڕانکارییەکانی ستەتە دەستبەجێ زیاد کرێ.
+=======
+Think of `setState()` as a *request* rather than an immediate command to update the component. For better perceived performance, React may delay it, and then update several components in a single pass. In the rare case that you need to force the DOM update to be applied synchronously, you may wrap it in [`flushSync`](/docs/react-dom.html#flushsync), but this may hurt performance.
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 
 `setState()` هەموو کاتێک دەستبەجێ کۆمپۆنێنتەکە تازەناکاتەوە . لەوانەیە ئەپدەیتەکە ڕێک بخات یان بیوەستێنی تا دواتر. ئەمە وادەکات خوێندنەوەی `this.state`بکەوێتە دوای بانگکردنی  `setState()` شاردنەوەی گەشەکردن. لەجیاتی ئەوە,  `componentDidUpdate` یان   `setState` callback (`setState(updater, callback)`) بەکاربێنە, ، وە گرەنتی کراون کە دەست پێدەکەن پاش ئەوەی ئەپدەیتکە زیادکرا. گەر پێویستە ستەت دانێیت بە بنجینەی ستەتی پێشوو دەربارەی,  `updater` بخوێنەرەوە لەم بەشەی خوارەوە.
 

@@ -12,6 +12,12 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
+> Try the new React documentation.
+> 
+> The updated [Tutorial](https://beta.reactjs.org/learn/tutorial-tic-tac-toe) teaches modern React and includes live examples.
+>
+> The new docs will soon replace this site, which will be archived. [Provide feedback.](https://github.com/reactjs/reactjs.org/issues/3308)
+
 This tutorial doesn't assume any existing React knowledge.
 
 ## Before We Start the Tutorial {#before-we-start-the-tutorial}
@@ -106,7 +112,7 @@ cd ..
 
 ```js
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 ```
 
@@ -542,7 +548,7 @@ var player = {score: 1, name: 'Jeff'};
 var newPlayer = Object.assign({}, player, {score: 2});
 // Now player is unchanged, but newPlayer is {score: 2, name: 'Jeff'}
 
-// Or if you are using object spread syntax proposal, you can write:
+// Or if you are using object spread syntax, you can write:
 // var newPlayer = {...player, score: 2};
 ```
 
@@ -1148,13 +1154,13 @@ Next, we'll define the `jumpTo` method in Game to update that `stepNumber`. We a
   }
 ```
 
-Notice in `jumpTo` method, we haven't updated `history` property of the state. That is because state updates are merged or in more simple words React will update only the properties mentioned in `setState` method leaving the remaining state as that is. For more info **[see the documentation](/docs/state-and-lifecycle.html#state-updates-are-merged)**.
+Notice in `jumpTo` method, we haven't updated `history` property of the state. That is because state updates are merged or in more simple words React will update only the properties mentioned in `setState` method leaving the remaining state as is. For more info **[see the documentation](/docs/state-and-lifecycle.html#state-updates-are-merged)**.
 
 We will now make a few changes to the Game's `handleClick` method which fires when you click on a square.
 
 The `stepNumber` state we've added reflects the move displayed to the user now. After we make a new move, we need to update `stepNumber` by adding `stepNumber: history.length` as part of the `this.setState` argument. This ensures we don't get stuck showing the same move after a new one has been made.
 
-We will also replace reading `this.state.history` with `this.state.history.slice(0, this.state.stepNumber + 1)`. This ensures that if we "go back in time" and then make a new move from that point, we throw away all the "future" history that would now become incorrect.
+We will also replace reading `this.state.history` with `this.state.history.slice(0, this.state.stepNumber + 1)`. This ensures that if we "go back in time" and then make a new move from that point, we throw away all the "future" history that would now be incorrect.
 
 ```javascript{2,13}
   handleClick(i) {
