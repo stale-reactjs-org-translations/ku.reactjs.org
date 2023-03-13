@@ -8,7 +8,20 @@ redirect_from:
   - "tips/false-in-jsx.html"
 ---
 
+<<<<<<< HEAD
 له‌ ڕیاكتدا، ده‌توانیت كۆمپۆنێنتێك دروست بكه‌یت كه‌ به‌و جۆره‌ مامه‌ڵه‌ بكات كه‌ تۆ ده‌ته‌وێت. پاشان، ده‌توانیت ته‌نها ئه‌و به‌شه‌ی ڕێنده‌ر بكه‌یت كه‌ خۆت ده‌ته‌وێت، به‌پێی سته‌یتی ئه‌پلیكه‌یشنه‌كه‌ت.
+=======
+> Try the new React documentation.
+> 
+> These new documentation pages teach modern React and include live examples:
+>
+> - [Conditional Rendering](https://beta.reactjs.org/learn/conditional-rendering)
+>
+> The new docs will soon replace this site, which will be archived. [Provide feedback.](https://github.com/reactjs/reactjs.org/issues/3308)
+
+
+In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 
 ڕێنده‌ركردنی كۆندیشنال له‌ ڕیاكتدا به‌ هه‌مان جۆری كۆندیشن كارده‌كات كه‌ له‌ جاڤاسجكریپتدا هه‌یه‌. ئۆپێره‌یته‌ره‌كانی جاڤاسكریپت به‌كاربهێنه‌ وه‌ك [`if`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) یاخود [conditional operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) بۆ ئه‌وه‌ی هه‌ندێك ئیلیمێنت دروست بكه‌یت به‌ پشت به‌ستن به‌ سته‌یتی ئه‌پلیكه‌یشنه‌كه‌ و پاشان ڕیاكت مالپه‌ڕه‌كه‌ به‌پێی ویستی تۆ ئه‌پده‌یت ده‌كاته‌وه‌.
 
@@ -35,11 +48,17 @@ function Greeting(props) {
   return <GuestGreeting />;
 }
 
+<<<<<<< HEAD
 ReactDOM.render(
   // تاقیبكه‌ره‌وه‌ بیگۆڕیت بۆ isLoggedIn={true}
   <Greeting isLoggedIn={false} />,
   document.getElementById('root')
 );
+=======
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+// Try changing to isLoggedIn={true}:
+root.render(<Greeting isLoggedIn={false} />);
+>>>>>>> 19aa5b4852c3905757edb16dd62f7e7506231210
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/ZpVxNq?editors=0011)
@@ -108,10 +127,8 @@ class LoginControl extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <LoginControl />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<LoginControl />);
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/QKzAgB?editors=0010)
@@ -142,10 +159,9 @@ function Mailbox(props) {
 }
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
-ReactDOM.render(
-  <Mailbox unreadMessages={messages} />,
-  document.getElementById('root')
-);
+
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<Mailbox unreadMessages={messages} />);
 ```
 
 [**له‌ كۆدپێن تاقیبكه‌ره‌وه‌**](https://codepen.io/gaearon/pen/ozJddz?editors=0010)
@@ -161,7 +177,7 @@ render() {
   const count = 0;
   return (
     <div>
-      { count && <h1>Messages: {count}</h1>}
+      {count && <h1>Messages: {count}</h1>}
     </div>
   );
 }
@@ -246,10 +262,8 @@ class Page extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Page />,
-  document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById('root')); 
+root.render(<Page />);
 ```
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/Xjoqwm?editors=0010)
