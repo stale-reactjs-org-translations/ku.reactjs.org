@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 
 <div dir="rtl">
+=======
+# react.dev
+
+This repo contains the source code and documentation powering [react.dev](https://react.dev/).
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 
 
 # وه‌شانی کوردی reactjs.org
@@ -11,15 +17,29 @@
 1. Node: any 12.x version starting with v12.0.0 or greater
 1. Yarn: See [Yarn website for installation instructions](https://yarnpkg.com/lang/en/docs/install/)
 1. A fork of the repo (for any contributions)
+<<<<<<< HEAD
 1. A clone of the [reactjs.org repo](https://github.com/reactjs/reactjs.org) on your local machine
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+1. A clone of the [react.dev repo](https://github.com/reactjs/react.dev) on your local machine
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 
 به‌ره‌وپێشچوونه‌کانمان له‌ رێگه‌ی ئه‌م ماڵپه‌ڕه‌وه‌ ببینه‌: https://isreacttranslatedyet.com
 
+<<<<<<< HEAD
+=======
+1. `cd react.dev` to go into the project root
+3. `yarn` to install the website's npm dependencies
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 
 ## با ده‌ستپێبکه‌ین!
 
+<<<<<<< HEAD
 ### پێویستییه‌کان
+=======
+1. `yarn dev` to start the development server (powered by [Next.js](https://nextjs.org/))
+1. `open http://localhost:3000` to open the site in your favorite browser
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 
 
 1. Git 
@@ -27,18 +47,26 @@
 3. Yarn: https://yarnpkg.com/lang/en/docs/install
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 The documentation is divided into several sections with a different tone and purpose. If you plan to write more than a few sentences, you might find it helpful to get familiar with the [contributing guidelines](https://github.com/reactjs/reactjs.org/blob/main/CONTRIBUTING.md#guidelines-for-text) for the appropriate sections.
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
+=======
+The documentation is divided into several sections with a different tone and purpose. If you plan to write more than a few sentences, you might find it helpful to get familiar with the [contributing guidelines](https://github.com/reactjs/react.dev/blob/main/CONTRIBUTING.md#guidelines-for-text) for the appropriate sections.
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 
 ### دامه‌زراندن
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ```
 # کۆپییه‌ک له‌ رێپۆکه‌مان وه‌ربگره‌:
 ```
 =======
 1. `git checkout main` from any folder in your local `reactjs.org` repository
+=======
+1. `git checkout main` from any folder in your local `react.dev` repository
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 1. `git pull origin main` to ensure you have the latest main code
 1. `git checkout -b the-name-of-my-branch` (replacing `the-name-of-my-branch` with a suitable name) to create a branch
 >>>>>>> 6bd09fe682e18ccd7747fcd7798fa8fb4d3edc42
@@ -59,15 +87,20 @@ git clone https://github.com/reactjs/ku.reactjs.org.git
 
 </div>
 
+<<<<<<< HEAD
 ```
 # بچۆره‌ ناو لقی سه‌ره‌کی پرۆژه‌که‌
 ```
+=======
+1. If possible, test any visual changes in all latest versions of common browsers, on both desktop and mobile.
+2. Run `yarn check-all`. (This will run Prettier, ESLint and validate types.)
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
 
 <div dir="ltr">
 
 1. `git add -A && git commit -m "My message"` (replacing `My message` with a commit message, such as `Fix header logo on Android`) to stage and commit your changes
 1. `git push my-fork-name the-name-of-my-branch`
-1. Go to the [reactjs.org repo](https://github.com/reactjs/reactjs.org) and you should see recently pushed branches.
+1. Go to the [react.dev repo](https://github.com/reactjs/react.dev) and you should see recently pushed branches.
 1. Follow GitHub's instructions.
 <<<<<<< HEAD
 1. If possible, include screenshots of visual changes. A Netlify build will also be automatically created once you make your PR so other people can see your change.
@@ -84,6 +117,7 @@ Yarn
 ```
 #  بۆ ده‌ستپێكردنی سێرڤه‌ری خۆكار كه‌ له‌ Gatsby وه‌رگیراوه‌
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ```
 # په‌یوه‌ستییه‌کانی npm داببه‌زێنه‌
@@ -201,3 +235,9 @@ yarn check-all
 گۆرانکارییه‌کانت له‌ لایه‌ن تیمی مه‌ینته‌ینه‌ره‌وه‌، پێداچوونه‌وه‌یان بۆ ده‌کرێت و بۆچوونی خۆیان به‌ ئێوه‌ ده‌ڵێن. پاش په‌سه‌ند کردن، گۆرانکارییه‌کانتان زیاد ده‌کرێت. 
 
 </div>
+=======
+If you are interested in translating `react.dev`, please see the current translation efforts [here](https://github.com/reactjs/react.dev/issues/4135).
+
+## License
+Content submitted to [react.dev](https://react.dev/) is CC-BY-4.0 licensed, as found in the [LICENSE-DOCS.md](https://github.com/reactjs/react.dev/blob/main/LICENSE-DOCS.md) file.
+>>>>>>> e5fd79cdbb296b87cab7dff17c3b7feee5dba96b
